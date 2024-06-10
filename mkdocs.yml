@@ -1,6 +1,6 @@
 site_name: Accelerate Science Core AI Concepts
-repo_url: https://github.com/catherinebreslin/ai-core-concepts/
-site_url: https://catherinebreslin.github.io/ai-core-concepts/
+repo_url: https://github.com/acceleratescience/ai-core-concepts/
+site_url: https://acceleratescience.github.io/ai-core-concepts/
 nav:
   - Home: index.md
 theme:
