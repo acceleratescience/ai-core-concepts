@@ -61,6 +61,25 @@ This online course covers the fundamentals of AI for researchers who would like 
 
 <div class="grid cards" markdown>
 
+-   :fontawesome-solid-file-lines:{ .lg .middle } [__Natural Language Processing__](nlp.md)
+
+    ---
+    Natural Language Processing
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-images:{ .lg .middle } [__Computer Vision__](image.md)
+
+    ---
+    Computer Vision
+
+</div>
+
+
+<div class="grid cards" markdown>
+
 -   :fontawesome-solid-laptop-code:{ .lg .middle } [__Training AI Models__](training.md)
 
     ---
@@ -92,6 +111,16 @@ This online course covers the fundamentals of AI for researchers who would like 
 
     ---
     Responsible Research and Innovation
+
+</div>
+
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-arrow-trend-up:{ .lg .middle } [__Next Steps__](next-steps.md)
+
+    ---
+    Next Steps
 
 </div>
 
