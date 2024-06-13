@@ -4,7 +4,7 @@
 
 In response, Accelerate Science’s programme offers tailored support to help those who would like to learn more about AI. 
 
-This online course covers the fundamentals of AI for researchers who would like to explore using AI in their work. It's designed as an introduction to the core concepts behind AI, helping researchers to understand how they might use AI in their own work, and signposting ways to get started. 
+This online course covers the core concepts of AI for researchers who are at the beginning of exploring AI in their work. It's designed as an introduction to the core concepts behind AI, demystifying some of the field's vocabulary, helping researchers to understand how they might use AI in their own work, and signposting ways to get started. 
 
 
 

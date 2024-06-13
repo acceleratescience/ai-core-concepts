@@ -53,16 +53,27 @@ Two ways that training can do badly are over and under fitting.
 
 When training, we mentioned the model parameters above, that get modified by the training process. There are other parameters too, called hyperparameters, that you might need to tune. These might be, for example, the number of layers in your neural network, or the learning rate of your training algorithm.
 
-We usually keep a separate development set for use with tuning hyperparameters. This lets us keep the test set held out, and avoid overfitting. 
+We usually keep a separate development set for use with tuning hyperparameters. This lets us keep the test set held out, and avoid overfitting.
 
+## Transfer Learning and Fine Tuning
+You do not always need to train a model from scratch. Often, there can be a model out there which you can use as a starting point. Then, you would finetune that model to your data, or use transfer learning.
+
+**Finetuning** is where you keeo the model as it is, and just train the model a bit more on your data
+
+**Transfer learning** is similar to finetuning, but with the understanding that you're training the model for a different task than the one it was originally trained to do. With neural networks, this typically means replacing the last layer with one which is designed for your task.
+
+Examples...
+
+With these techniques, there are many options for how to do this learning efficiently. 
 
 
 ## Top Tips for getting started
 
-
-1. Prototype - start with a small model and a simple baseline; Start with a small dataset, before increasing the amount of data
-2. Ensure there's no leakage between your test and training data
-3. Make use of open source libraries, models and data
+1. Look at what's already been built. Something like Hugging Face has a large repository of models, and yet more models are built and released by different groups around the world.
+2. Consider whether you can build a baseline system without ML/AI. This will be simple to do, and give you some insight into your problem. 
+3. Prototype - start with a small model and a simple baseline; Start with a small dataset, before increasing the amount of data
+4. Ensure there's no leakage between your test and training data
+5. Make use of open source libraries, models and data
 
 ## Inspiration
 
