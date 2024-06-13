@@ -392,6 +392,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#transfer-learning-and-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transfer Learning and Fine Tuning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#top-tips-for-getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       Top Tips for getting started
@@ -472,9 +481,17 @@ Shuffling your data</p>
 <p><strong>Underfitting</strong> is the opposite, where you might have a lot of data and a simple model, so the model doesn't do well at approximating the data. In this case the model will perform poorly on both your training and test set. </p>
 <h2 id="hyperparameters">Hyperparameters</h2>
 <p>When training, we mentioned the model parameters above, that get modified by the training process. There are other parameters too, called hyperparameters, that you might need to tune. These might be, for example, the number of layers in your neural network, or the learning rate of your training algorithm.</p>
-<p>We usually keep a separate development set for use with tuning hyperparameters. This lets us keep the test set held out, and avoid overfitting. </p>
+<p>We usually keep a separate development set for use with tuning hyperparameters. This lets us keep the test set held out, and avoid overfitting.</p>
+<h2 id="transfer-learning-and-fine-tuning">Transfer Learning and Fine Tuning</h2>
+<p>You do not always need to train a model from scratch. Often, there can be a model out there which you can use as a starting point. Then, you would finetune that model to your data, or use transfer learning.</p>
+<p><strong>Finetuning</strong> is where you keeo the model as it is, and just train the model a bit more on your data</p>
+<p><strong>Transfer learning</strong> is similar to finetuning, but with the understanding that you're training the model for a different task than the one it was originally trained to do. With neural networks, this typically means replacing the last layer with one which is designed for your task.</p>
+<p>Examples...</p>
+<p>With these techniques, there are many options for how to do this learning efficiently. </p>
 <h2 id="top-tips-for-getting-started">Top Tips for getting started</h2>
 <ol>
+<li>Look at what's already been built. Something like Hugging Face has a large repository of models, and yet more models are built and released by different groups around the world.</li>
+<li>Consider whether you can build a baseline system without ML/AI. This will be simple to do, and give you some insight into your problem. </li>
 <li>Prototype - start with a small model and a simple baseline; Start with a small dataset, before increasing the amount of data</li>
 <li>Ensure there's no leakage between your test and training data</li>
 <li>Make use of open source libraries, models and data</li>
