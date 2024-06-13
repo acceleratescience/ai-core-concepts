@@ -22,6 +22,9 @@ This section will help you understand:
     - Many open source datasets are already split - check this before doing your own split
 - Skewed data
 
+## How much data do you need?
+
+
 ## Where to get data from
 
 - Collection
