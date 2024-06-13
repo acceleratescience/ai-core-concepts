@@ -13,33 +13,35 @@ This section will help you understand:
 
 Supervised learning is the most popular form of AI. However, supervised learning requires labelled data, which can be difficult or expensive to obtain. Most of the data in the world is unlabelled. Unsupervised learning helps us make sense of unstructured and unlabelled data.
 
-Three common unsupervised algorithms are _clustering_, _dimensionality reduction_ and _anomaly detection_. 
+Three common unsupervised algorithms are _clustering_, _dimensionality reduction_ and _anomaly detection_.
+
+## Unsupervised Learning Algorithms
 
 **Clustering**
 
-Clustering is the process of taking your data and arranging it into sub-groups, or clusters, that are sufficiently similar to each other. Unlike classification, where we know the groups ahead of time, clustering uncovers the structure of the groups in a larger population.
+Clustering is the process of taking your data and discovering sub-groups, or clusters, that are sufficiently similar to each other. Unlike classification in supervised learning, where we know the groups ahead of time, clustering uncovers the structure of the groups in a larger population.
 
-Suppose you have a library of photos of people. A clustering algorithm might group them into clusters that you hope would correspond to specific individuals. This is not unlike the processing that your phone's library might do. You cannot guarantee that this is the case, your phone might for example group two people together if they look similar, or split one person into two clusters based on something like their haircut. 
+Suppose you're working with medical data. You know that some groups of people respond differently to treatment than others, but you don't know the factors that lead here. A clustering algorithm might group your participants into different clusters that allow you to explain what's going on. 
 
-Other applications of clustering include: xxx
+Other places that people have used clustering include uncovering structure in archeological data, clustering sounds and speakers together, identifying sub-groups of study participants etc. 
 
-K-means is a popular clustering algorithm. You might have to give the number of clusters, or you might use a method to try and find the best fitting number of clusters.  
+K-means and DBSCAN are popular clustering algorithms. You may need to give the number of clusters before running the clustering algorithm, or you might use an automated method to try and find which number of clusters best fits the data. 
 
 
 **Dimensionality reduction**
 
-High dimensional data is hard to work with. It's hard to see, and also has an impact on the number of parameters your AI model might need to model the data. The more parameters you have, the larger model and more data you need. This is the _curse of dimensionality_.
+High dimensional data is hard to work with. The first thing we usually notice is that it's hard to visualise well, so that you can explore what the data looks like. A high number of dimensions also imacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model and more data you need. This is the _curse of dimensionality_.
 
-Reducing the dimensionality of your data can be one way to work with this.
+Reducing the dimensionality of your data can be one way to work with it effectively. Projecting down to 2- or 3-dimensions means that you can plot it on a graph to view. 
 
-Can also help with visualisation, because we can project to 2- and 3-dimensions which we can view on a graph. 
+
+Principal Component Analysis (PCA), [t-SNE](https://distill.pub/2016/misread-tsne/), and [UMAP](https://pair-code.github.io/understanding-umap/) are popular dimensionality reduction algorithms that you might see used. 
 
 **Anomaly Detection**
 
-Tries to figure out if an example is an anomaly, and doesn't fit with the rest of the set. 
+Anomoly detection is identifying anomolous or rare examples in a dataset, that are inconsistent with the rest of the dataset.
 
-For example, identifying a fraudulent bank transaction because it doesn't fit with your other transactions. 
-
+Examples of this might be in identifying fraudulent and unusual bank transactions, or identifying unusual behaviour that might be a cybersecurity threat. 
 
 
 ## Inspiration

@@ -9,7 +9,7 @@ This section will help you understand:
 
 
 ## Overview
-AI is suddenly everywhere! And researchers are looking to use AI in their research, but need to understand what it is to make informed decisions about pursuing research using AI. 
+AI has grown in popularity over the past decade, and is cropping up in many places. If you're a researchers who wants to use AI in your work, it's helpful to understand what AI is and to think about how you can use it effectively. 
 
 This short online course is a set of resources to explain the core concepts behind AI, without the need for maths and programming. The goal is to allow researchers to explore the ideas behind AI and how they might work in research, before diving in to learn more. 
 
