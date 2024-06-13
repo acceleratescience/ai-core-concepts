@@ -414,15 +414,18 @@
 <h2 id="unsupervised-learning-algorithms">Unsupervised Learning Algorithms</h2>
 <p><strong>Clustering</strong></p>
 <p>Clustering is the process of taking your data and discovering sub-groups, or clusters, that are sufficiently similar to each other. Unlike classification in supervised learning, where we know the groups ahead of time, clustering uncovers the structure of the groups in a larger population.</p>
-<p>Suppose you're working with medical data. You know that some groups of people respond differently to treatment than others, but you don't know the factors that lead here. A clustering algorithm might group your participants into different clusters that allow you to explain what's going on. </p>
+<p>Suppose you're working with medical data. You know that some groups of people respond differently to treatment than others, but you don't know the factors that lead here. A clustering algorithm might group your participants into different clusters that allow you to explain what's going on.</p>
+<p><img align="center" alt="Clustering" src="../imgs/cluster1.png" /></p>
 <p>Other places that people have used clustering include uncovering structure in archeological data, clustering sounds and speakers together, identifying sub-groups of study participants etc. </p>
 <p>K-means and DBSCAN are popular clustering algorithms. You may need to give the number of clusters before running the clustering algorithm, or you might use an automated method to try and find which number of clusters best fits the data. </p>
 <p><strong>Dimensionality reduction</strong></p>
 <p>High dimensional data is hard to work with. The first thing we usually notice is that it's hard to visualise well, so that you can explore what the data looks like. A high number of dimensions also imacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model and more data you need. This is the <em>curse of dimensionality</em>.</p>
-<p>Reducing the dimensionality of your data can be one way to work with it effectively. Projecting down to 2- or 3-dimensions means that you can plot it on a graph to view. </p>
+<p>Reducing the dimensionality of your data can be one way to work with it effectively. Projecting down to 2- or 3-dimensions means that you can plot it on a graph to view.</p>
+<p><img align="center" alt="Dimensionality Reduction" src="../imgs/dimred.png" /></p>
 <p>Principal Component Analysis (PCA), <a href="https://distill.pub/2016/misread-tsne/">t-SNE</a>, and <a href="https://pair-code.github.io/understanding-umap/">UMAP</a> are popular dimensionality reduction algorithms that you might see used. </p>
 <p><strong>Anomaly Detection</strong></p>
 <p>Anomoly detection is identifying anomolous or rare examples in a dataset, that are inconsistent with the rest of the dataset.</p>
+<p><img align="center" alt="Anomoly Detection" src="../imgs/anomoly1.png" /></p>
 <p>Examples of this might be in identifying fraudulent and unusual bank transactions, or identifying unusual behaviour that might be a cybersecurity threat. </p>
 <h2 id="inspiration">Inspiration</h2>
 <p>Find more examples of research using unsupervised learning on Accelerate's blog:</p>
