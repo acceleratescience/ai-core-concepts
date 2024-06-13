@@ -9,6 +9,7 @@ This section will help you understand:
 - How to use data for robust training, development and testing
 - Over and under fitting
 - Tuning hyperparameters
+- Transfer learning and fine tuning
 - Know about the iterative approach to building a model
 
 
