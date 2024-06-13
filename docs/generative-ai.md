@@ -32,6 +32,8 @@ There are some considerations to take into account when using foundation models:
 - These models are typically trained on large amounts of data from the internet, which brings with it societal biases that become embedded in the model
 - There's a large environmental cost to using these models
 
+You might hear the term self-supervised to describe these models, because the supervision signal is from within the data itself rather than being labelled by a human. 
+
 
 ## Inspiration
 
