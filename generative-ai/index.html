@@ -420,20 +420,26 @@
 <h2 id="overview">Overview</h2>
 <p>Since 2017, there has been a lot of work in the area of generative AI. Broadly speaking, generative AI refers to models that generate content, usually in the form of images, text, video or audio.</p>
 <p><img align="center" alt="Generative AI" src="../imgs/gen1.png" /></p>
-<p>In many ways, generative AI is similar to supervised learning. The models output predictions that are content. However, for the kinds of content that is popular with Generative AI, there are orders of magnitude more data available online than for other tasks. This has meant that organisations can build larger and larger models, with massive training data sets. </p>
-<p>Generative AI was spurred on recently by the introduction of the transformer model (a kind of neural network) in 2017, and more recent work in building large models. In the field of natural language processing (NLP), transformer models have had a huge impact. Generative AI with text comes from language modelling - the task of predicting the next word in a sentence. This is a supervised learning task, where the task is given a sequence of words, predict the next word. However, it doesn’t require large amounts of effort to label data, because “next word” is inherently there in the data. This model is a very powerful autocomplete model. </p>
-<p>What’s interesting about Generative AI models for NLP is that when trained on large amounts of data, they are able to do several tasks that they weren’t explicitly trained to do. Or, they can be fine-tuned to do a task with a small amount of data - far smaller than the amount of data that’s needed to build a supervised model from scratch. These models are the basis of ChatGPT. </p>
+<p>In many ways, generative AI is similar to supervised learning. The predictions that the models make are actually predictions about the content itself. You might hear the term <em>self-supervised</em> to describe these models. This is because we don't need a person to label the data as the supervision signal is present within the data itself. </p>
+<p>One big difference between generative AI and more classic supervised learning is that the kind of content (image, text, audio etc.) that's popular for generative AI models is widely available online. This means that organisations can build larger and larger models with massive training data sets. </p>
+<p>Generative AI was spurred on recently by the introduction of the transformer model (a kind of neural network) in 2017, and more recent work in building large models. In the field of natural language processing (NLP), transformer models have had a huge impact. Generative AI in NLP uses the task of <em>language modelling</em> - the task of predicting the next word in a sentence. This is a supervised learning task. Given a sequence of words, the model's goal is to predict the next word. It doesn’t require large amounts of effort to label the text data for training because “next word” is inherently there in the data. A language model is essentially a very powerful autocomplete model, but additional types of training is used to turn a basic language model into a chat model like ChatGPT. </p>
+<p>What’s interesting about Generative AI models for NLP is that when trained on large amounts of data, they are able to do several tasks that they weren’t explicitly trained to do. For example, with a large amount of multilingual training data, they are able to translate between languages. This is described as <em>zero shot learning</em>.</p>
+<p>Tasks involving image and audio processing tend to make use of <em>diffusion models</em> rather than transformers. </p>
 <h2 id="frontierfoundation-models">Frontier/Foundation Models</h2>
-<p>As organisations have trained increasingly larger and larger models, they have got more expensive to train. A typical way of working now is that these large ‘<em>foundation models</em>’ trained once by an organisation with the money and resources to do so, and then used by many others.</p>
+<p>Generative AI models are expensive to train, due to their large size and the large amount of training data. There's a current trend of building larger and larger models. That means that only a handful of organisations can afford to build their own models from scratch. A typical way of working now is that these large ‘<em>foundation models</em>’ trained once by an organisation with the money and resources to do so, are then released publicly. Others can then use the models directly, or <em>fine-tune</em> them for their own projects with a small amount of data - far smaller than the amount of data that’s needed to build their own large model from scratch.</p>
 <p>There are some considerations to take into account when using foundation models:</p>
 <ul>
-<li>We do not usually know the data they're trained on</li>
-<li>If a model is behind an API, we cannot be sure about reproducibility</li>
-<li>These models are typically trained on large amounts of data from the internet, which brings with it societal biases that become embedded in the model</li>
-<li>There's a large environmental cost to using these models</li>
+<li>For many public models, there are varying levels of openness. Often the model weights might be available, but we might not know about the training data that was used. </li>
+<li>If a model is hosted by an organisation behind an API, we cannot be sure what changes they are making, and that can affect reproducibility</li>
+<li>These models are typically trained on large amounts of data from the internet, which brings with it societal biases that become embedded in the model.</li>
+<li>There's a large environmental cost to using these models.</li>
 </ul>
-<p>You might hear the term self-supervised to describe these models, because the supervision signal is from within the data itself rather than being labelled by a human. </p>
 <h2 id="inspiration">Inspiration</h2>
+<p>Here are two papers that look at applications of some of these models:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/2311.04929">An Interdisciplinary Outlook on Large Language Models for Scientific Research</a></li>
+<li><a href="https://arxiv.org/abs/2404.07771">An Overview of Diffusion Models: Applications, Guided Generation, Statistical Rates and Optimization</a></li>
+</ul>
 <h2 id="more-resources">More Resources</h2>
 <p>Accelerate Science has two workshops related to generative AI, each with online material that you can work through at your own pace:</p>
 <ul>
