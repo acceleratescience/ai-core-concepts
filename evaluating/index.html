@@ -347,18 +347,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-split" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Data split
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qualitative-vs-quantative" class="md-nav__link">
+  <a href="#data" class="md-nav__link">
     <span class="md-ellipsis">
-      Qualitative vs Quantative
+      Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qualitative-vs-quantative-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qualitative vs Quantative Evaluation
     </span>
   </a>
   
@@ -416,36 +425,48 @@
 <li>Using test data to robustly evaluate models</li>
 <li>Quantative vs qualitative evaluation</li>
 <li>Evaluation metrics</li>
-<li>Error analysis tools including confusion matrices &amp; ROC</li>
+<li>Error analysis tools including stratification, confusion matrices &amp; ROC</li>
 </ul>
-<h2 id="data-split">Data split</h2>
-<p>Split your data into train/test/dev splits
-If you have a small set, something like k-fold cross validation is the best bet. </p>
-<h2 id="qualitative-vs-quantative">Qualitative vs Quantative</h2>
+<h2 id="overview">Overview</h2>
+<p>All machine learning models make mistakes. Consider a binary classification supervised model that's used to identify spam emails, and has been trained on a training dataset (circles). As the model weights have been trained using the training data, we can't use that data to see how well the classifier performs. That's a bit like seeing the exam questions ahead of time! To judge how well the classifier performs, we test its performance on a separate test set (triangles). </p>
+<p><img align="center" alt="Evaluation" src="../imgs/eval1.png" /></p>
+<h2 id="data">Data</h2>
+<p>It's important when training to separate your data into training, development, and test sets.</p>
+<ul>
+<li><strong>Training</strong> data is used for adjusting the model parameters during the model training phase</li>
+<li><strong>Development</strong> data is used to judge the model performance at intermediate stages, and may be used for tuning hyperparameters</li>
+<li><strong>Test</strong> data is used at the end of development to estimate how well your model performs on unseen data</li>
+</ul>
+<p>It is important to ensure that there's no leakage or cross-over between training and testing data.</p>
+<p>One really common way that leakage happens is during data pre-processing. It's common to estimate some transformations of the data. For example, normalising it so that the mean and standard deviation are 0 and 1. Estimating the transformations should be done only on the training set, and then should be applied to the development and test data. </p>
+<p>If you have a small set, and carving out separate test and development sets leaves you with only a very small amount of training data, then a technique like <em>k-fold cross validation</em> may be appropriate. </p>
+<h2 id="qualitative-vs-quantative-evaluation">Qualitative vs Quantative Evaluation</h2>
 <p>There are two main categories of way to evaluate how well your model is working</p>
 <ol>
-<li>Devise an automated metric which you can run to find a score</li>
-<li>Ask people to interact with your model and judge it</li>
+<li><em>Quantative</em> evaluations devise an automated metric which you can automatically compute on your test set to give a score</li>
+<li><em>Qualitative</em> evaluations ask people to interact with your model and judge it</li>
 </ol>
+<p>For some tasks, like spam email detection, we can automatically compute an accuracy metric. For other tasks, like machine translation, there are many possible correct answers and it's hard to find a good automated metric. Hence, the way to judge performance is by having people evaluate the translations.</p>
+<p>Qualitative evaluations are expensive to perform, and so in practice it's often helpful to have a mix of quantitative and qualitative metrics. </p>
 <h2 id="metrics">Metrics</h2>
-<p>All AI models make mistakes. Metrics depend on what it is you're trying to do.</p>
-<p>Automated metrics are run over a test dataset. For classification, some common ways to judge performance are:</p>
+<p>There are a wide range of metrics in use for different tasks, so the best thing to do is to look at the literature and see what people are using. However, some common metrics exist. For classification:</p>
 <ul>
-<li><strong>Accuracy</strong> is simply how often the classifier is right</li>
-<li><strong>Precision</strong> tells you for a category, how many things predicted to be in that category actually belong to that category. </li>
-<li><strong>Recall</strong> tells you for a category, how many things of that category are predicted as being in that category. </li>
+<li><strong>Accuracy</strong> is simply how often the classifier is right. This is computed by comparing the classifier's prediction against the ground truth human labels in a test set. </li>
+<li><strong>Precision</strong> is a measure of how many of your positive classifications were correct. For the spam email case, it's the proportion of emails the model identified as spam that actually were spam. </li>
+<li><strong>Recall</strong> tells you what proportion of your positives were correct. For the spam email case, it's the proportion of actual spam emails the model identified as spam.</li>
 </ul>
-<p>Precision and recall are used together. An increase in one usually means a decrease in the other. </p>
+<p><a href="https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall">Precision and recall</a> are used together. An increase in one usually means a decrease in the other. </p>
 <p>For regression tasks,</p>
 <ul>
-<li><strong>RMSE</strong> root mean squared error, is a measure of how far on average your predictions are from the ground truth. </li>
+<li><strong>RMSE</strong> root mean squared error, is a measure of how far on average your predictions are from the ground truth label. </li>
 </ul>
-<p>You need to use your judgement to interpret a particular metric. An accuracy or 5% may be great for one task, but terrible for another. </p>
+<p>You'll need to use your judgement to interpret a particular metric. An accuracy or 5% may be great for one task, but terrible for another. </p>
 <h2 id="error-analysis">Error Analysis</h2>
-<p>Usually, you will want to look deeper at the kind of errors that a model is making, in order to identify places where you can improve. Some useful ways to view are:</p>
+<p>Usually, you 'll want to look deeper at the kind of errors that a model is making, in order to identify places where you can improve. Some useful ways to view errors are:</p>
 <ul>
-<li><strong>Confusion matrix</strong></li>
-<li><strong>ROC</strong> </li>
+<li><strong>Confusion matrix</strong>: a plot showing which categories were confused with each other.</li>
+<li><strong>ROC</strong> a graph that shows classification error as you change the classifier's threshold.</li>
+<li><strong>Stratification</strong> of your test data into different subgroups, to compute the error on those. This can help identfy sub-populations with different performance. </li>
 </ul>
 <h2 id="contact">Contact</h2>
 <p>If you can't find what you need</p>
