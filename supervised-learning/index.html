@@ -455,10 +455,15 @@
 <p>By training the model directly on a dataset of emails that have been labelled as being spam or not, the model can learn the patterns that identify the two types of email, and then predict for a new email whether it is spam or not. </p>
 <h2 id="classification-and-regression">Classification and Regression</h2>
 <p>Supervised learning can either be <strong>classification</strong> or <strong>regression</strong>.</p>
-<p><strong>Classification</strong> is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection. A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. </p>
+<p><strong>Classification</strong> is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection.  You can think of this as finding a line to separate the two classes, as here:</p>
+<p><img align="center" alt="Binary Classification" src="../imgs/sup3.png" /></p>
+<p>Though, more complex classifiers draw lines that are more complex than just a straight line. </p>
+<p>A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category.</p>
+<p><img align="center" alt="Multi-class Classification" src="../imgs/sup4.png" /></p>
 <p>In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called <em>multi-label</em> classification.</p>
 <p>Sometimes the number of classes can be very large, as in the case of many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. </p>
 <p><strong>Regression</strong> is similar to classification, except that the output is a continuous number rather than a discrete class. Examples might be predicting the toxicity of a molecule on a scale. </p>
+<p><img align="center" alt="Regression" src="../imgs/sup5.png" /></p>
 <h2 id="examples-of-supervised-learning">Examples of Supervised Learning</h2>
 <p>Examples of supervised learning tasks include:</p>
 <table>
