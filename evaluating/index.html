@@ -438,8 +438,6 @@
 <li><strong>Test</strong> data is used at the end of development to estimate how well your model performs on unseen data</li>
 </ul>
 <p>It is important to ensure that there's no leakage or cross-over between training and testing data.</p>
-<p>One really common way that leakage happens is during data pre-processing. It's common to estimate some transformations of the data. For example, normalising it so that the mean and standard deviation are 0 and 1. Estimating the transformations should be done only on the training set, and then should be applied to the development and test data. </p>
-<p>If you have a small set, and carving out separate test and development sets leaves you with only a very small amount of training data, then a technique like <em>k-fold cross validation</em> may be appropriate. </p>
 <h2 id="qualitative-vs-quantative-evaluation">Qualitative vs Quantative Evaluation</h2>
 <p>There are two main categories of way to evaluate how well your model is working</p>
 <ol>

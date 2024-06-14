@@ -476,8 +476,6 @@
 <li><strong>Development</strong> data is used to judge the model performance at intermediate stages, and may be used for tuning hyperparameters</li>
 <li><strong>Test</strong> data is used at the end of development to estimate how well your model performs on unseen data</li>
 </ul>
-<p>It is important to ensure that there's no leakage or cross-over between training and testing data.</p>
-<p>One really common way that leakage happens is during data pre-processing. It's common to estimate some transformations of the data. For example, normalising it so that the mean and standard deviation are 0 and 1. Estimating the transformations should be done only on the training set, and then should be applied to the development and test data. </p>
 <h2 id="over-and-under-fitting">Over and under fitting</h2>
 <p>Two ways that training can be derailed are over- and under-fitting.</p>
 <p><strong>Overfitting</strong> is where you have a small amount of data and a complex model, so the model learns to model the training set really well. In this case, the model will perform really well on the training set, but poorly on your test set. </p>
