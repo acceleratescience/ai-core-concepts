@@ -117,6 +117,16 @@ This online course covers the core concepts of AI for researchers who are at the
 
 <div class="grid cards" markdown>
 
+-   :fontawesome-solid-clipboard-check:{ .lg .middle } [__Some Practical Advice__](practical.md)
+
+    ---
+    Some practical advice
+
+</div>
+
+
+<div class="grid cards" markdown>
+
 -   :fontawesome-solid-arrow-trend-up:{ .lg .middle } [__Next Steps__](next-steps.md)
 
     ---

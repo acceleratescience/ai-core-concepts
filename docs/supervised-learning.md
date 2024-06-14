@@ -30,13 +30,24 @@ By training the model directly on a dataset of emails that have been labelled as
 
 Supervised learning can either be **classification** or **regression**.
 
-**Classification** is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection. A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. 
+**Classification** is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection.  You can think of this as finding a line to separate the two classes, as here:
+
+![Binary Classification](imgs/sup3.png){ align=center }
+
+Though, more complex classifiers draw lines that are more complex than just a straight line. 
+
+A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category.
+
+
+![Multi-class Classification](imgs/sup4.png){ align=center }
 
 In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called _multi-label_ classification.
 
 Sometimes the number of classes can be very large, as in the case of many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. 
 
 **Regression** is similar to classification, except that the output is a continuous number rather than a discrete class. Examples might be predicting the toxicity of a molecule on a scale. 
+
+![Regression](imgs/sup5.png){ align=center }
 
 ## Examples of Supervised Learning
 

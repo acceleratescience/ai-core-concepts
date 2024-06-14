@@ -25,10 +25,13 @@ To use your data, you'll need to split it into several parts. One part will be f
 
 If you have a dataset, then a common rule of thumb is to use 80% of data for training, 10% for development, and 10% for testing. However, you do need that 10% for testing to be enough data that you can see statistically significant results.
 
+Usually you'd randomly sample the test and training set. There may be cases though where you want to do something different. One example is stratified sampling, where you split your data into segments and sample from each segment to be sure you have representation in your test set. Another example is where you may want to be sure that there is no overlap between speakers in test/training data when you have multiple examples (e.g. speech). 
+
 If you don't have enough data for this split, you can use an N-fold cross validation setup.
 
 If you have more data, and from different sources, you might need to carefully think about how to split your data. It's important, for example, that your test set reflects the task you're trying to do. If you use synthetic data in your training, you might keep that out of your test set. 
 
+Important to keep a split between training and the other sets. Data pre-processing and any parameters are learned on the training set, and then applied to test/validation splits. E.g. if you normalise data then find the parameters on the training set and transfer to test set. This avoids a leakage between test/train. 
 
 
 ## How much data do you need?
@@ -41,6 +44,8 @@ This is a commonly asked question, but there's no hard and fast answer.
 **Diversity** you also need diversity in your data as well as quantity. More data that has the same information in won't really improve your model
 
 **Starting point** starting from scratch usually requires more data than if you're finetuning an already existing model.
+
+How much data relates to dimension of data too.. need more data for higher dimensional...
 
 
 ## Data issues
