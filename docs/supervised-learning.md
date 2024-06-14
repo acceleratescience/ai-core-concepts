@@ -20,7 +20,7 @@ Our job in using supervised learning is to define what the input and output of a
 
 One example of supervised learning is that of predicting whether an email is spam or not. In this example, there are two _categories_, or _classes_ - SPAM and NOT_SPAM.
 
-Our machine learning models cannot directly accept email text as input, so first we extract features from each of the emails. Three features might be, for example, the length of the email, the number of spelling mistakes, and the number of dollar signs in the email. 
+Our machine learning models cannot directly accept email text as input, so first we extract numerical features from each of the emails. Three features might be, for example, the length of the email, the number of spelling mistakes, and the number of dollar signs in the email. 
 
 ![Spam Email Detection](imgs/sup2.png){ align=center }
 
@@ -30,24 +30,29 @@ By training the model directly on a dataset of emails that have been labelled as
 
 Supervised learning can either be **classification** or **regression**.
 
-**Classification** is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection.  You can think of this as finding a line to separate the two classes, as here:
+**Classification** is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection.  You can think of the model as finding a line to separate the two classes, as here:
 
 ![Binary Classification](imgs/sup3.png){ align=center }
 
-Though, more complex classifiers draw lines that are more complex than just a straight line. 
+Usually, there's some overlap between our classes, but we can find a good way to separate them. Usually though, classifiers find a way to separate two classes that is more complex than just a straight line. 
 
 A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category.
 
 
 ![Multi-class Classification](imgs/sup4.png){ align=center }
 
-In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called _multi-label_ classification.
+In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called _multi-label_ classification, because each photo has more than one label associated with it.
 
-Sometimes the number of classes can be very large, as in the case of many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. 
+Sometimes the number of classes can be very large, in the thousands or millions, as in the case of many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. 
 
-**Regression** is similar to classification, except that the output is a continuous number rather than a discrete class. Examples might be predicting the toxicity of a molecule on a scale. 
+**Regression** is similar to classification, except that the output is a continuous number rather than a discrete class. Examples might be predicting the toxicity of a molecule on a scale. Fitting a line of best fit is a simple kind of regression. 
 
 ![Regression](imgs/sup5.png){ align=center }
+
+## Feature Extraction
+
+It's worth noting that machine learning models require numerical inputs, and you'll need to consider in designing your setup. Some tasks naturally have numerical inputs already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to a numerical format by extracting _features_.
+
 
 ## Examples of Supervised Learning
 
@@ -73,10 +78,6 @@ Some of the common supervised learning algorithms you might encounter are:
 - Neural Networks
 
 Much of the recent excitement around AI focuses on neural network approaches. However, depending on your data and task, the other algorithms may be more practical to use.
-
-## Feature Extraction
-
-It's worth noting that models require numerical inputs as it's something you'll need to consider in designing your setup. Some tasks naturally have numerical inputs already - whether that's data from sensors, medical tests, pixel values or something else that's naturally a number. In other tasks, we need to convert our input to a numerical format by extracting _features_. 
 
 
 ## Top Tips for getting started

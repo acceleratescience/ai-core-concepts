@@ -21,7 +21,7 @@ Three common unsupervised algorithms are _clustering_, _dimensionality reduction
 
 Clustering is the process of taking your data and discovering sub-groups, or clusters, that are sufficiently similar to each other. Unlike classification in supervised learning, where we know the groups ahead of time, clustering uncovers the structure of the groups in a larger population.
 
-Suppose you're working with medical data. You know that some groups of people respond differently to treatment than others, but you don't know the factors that lead here. A clustering algorithm might group your participants into different clusters that allow you to explain what's going on.
+Suppose you're working with medical data. You know that some groups of people respond differently to treatment than others, but you don't know the factors that drive this. A clustering algorithm might group your participants into different clusters that potentially allow you to better explain what's going on.
 
 ![Clustering](imgs/cluster1.png){ align=center }
 
@@ -32,7 +32,7 @@ K-means and DBSCAN are popular clustering algorithms. You may need to give the n
 
 **Dimensionality reduction**
 
-High dimensional data is hard to work with. The first thing we usually notice is that it's hard to visualise well, so that you can explore what the data looks like. A high number of dimensions also imacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model and more data you need. This is the _curse of dimensionality_.
+High dimensional data is hard to work with. The first thing we usually notice is that it's hard to visualise well in high dimensions, so that you can explore what the data looks like. A high number of dimensions also imacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model and more data you need. This is the _curse of dimensionality_.
 
 Reducing the dimensionality of your data can be one way to work with it effectively. Projecting down to 2- or 3-dimensions means that you can plot it on a graph to view.
 
