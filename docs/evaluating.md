@@ -24,10 +24,6 @@ It's important when training to separate your data into training, development, a
 
 It is important to ensure that there's no leakage or cross-over between training and testing data.
 
-One really common way that leakage happens is during data pre-processing. It's common to estimate some transformations of the data. For example, normalising it so that the mean and standard deviation are 0 and 1. Estimating the transformations should be done only on the training set, and then should be applied to the development and test data. 
-
-If you have a small set, and carving out separate test and development sets leaves you with only a very small amount of training data, then a technique like _k-fold cross validation_ may be appropriate. 
-
 ## Qualitative vs Quantative Evaluation
 There are two main categories of way to evaluate how well your model is working
 
