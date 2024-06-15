@@ -22,26 +22,29 @@ The **black-box** nature of many models mean that it can be difficult to underst
 
 ## Risks and Concerns
 
-**Bias**
+There are also a number of wider risks and concerns about the field of AI.
 
-**Environment**
+ML models learn from the data they are trained on, which means that they learn and reflect any **bias** that was present in the training data. This can be particularly harmful if the models were trained on data scraped from the internet, which contains societal biases - like racial and gender - that we do not want to propagate. 
 
-**Accountability** and human oversight
+The **environmental cost** of building and using ML models is in the spotlight. These models require large amounts of computing power to build and use, and hence use significant amounts of energy. Reducing the carbon footprint of AI is top of many people's mind. 
 
-**Reproducibility**
+Due to the mistakes that ML models make, it's important to think about **accountability** and human oversight. Leaving ML models to make critical decisions with no oversight raises the question about who remains accountable and responsible when the system makes the wrong decision, especially in tasks where a wrong decision can cause harm. 
 
-**Source of data** copyright, consent etc.
+From a scientific research perspective, ensuring **reproducibility** is important. However, in the fast-paced field, reproducibility can be neglected. It is hard to explain the decisions of ML models, and in many cases **explainability and transparency** are important. 
 
-**Potential for misuse**
+ML models are trained on data, and it's very important to know the **source of data**. Much data is copyrighted, and we may need consent from the owners of that data in order to use it.
 
-**Explainability and Transparency**
+As with all technology, there is a **potential for misuse**. For researchers, the idea that their work can be misinterpreted and misused might seem like a far-off concern. However, it's important to consider at the outset how our work might be used in ways we don't support. 
+
+
 
 ## Regulation
 
-Regulation for AI is being developed, and is a shifting area, so always do your own research into regulations that might apply.
+Regulation for AI is being developed, and this is a shifting area. Always do your own research into regulations that might apply to your research. 
 
-The first AI law to pass is the EU's AI act. This regulation has some banned uses of AI, along with some high-risk applications that come with obligations if they are deployed. Most of the act doesn't apply to research, but could come into force if you move to commercialise your work.
+The first AI law to pass is the EU's AI act. This regulation has some banned uses of AI. It also carves out some high-risk applications that come with obligations if they are deployed. Most of the act doesn't apply to research, but could come into force if you move to commercialise your work.
 
+Other jurisdictions are crafting laws and guidelines that may come into force. 
 
 
 
