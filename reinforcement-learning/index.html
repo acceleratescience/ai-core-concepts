@@ -347,9 +347,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#what-is-reinforcement-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      What is Reinforcement Learning?
     </span>
   </a>
   
@@ -404,18 +404,23 @@
 <h2 id="learning-objectives">Learning Objectives</h2>
 <p>This section will help you understand:</p>
 <ul>
-<li>What reinforcement learning is, and where you can use it</li>
+<li>What reinforcement learning is</li>
 <li>Some real-world examples of reinforcement learning in research</li>
 </ul>
-<h2 id="overview">Overview</h2>
-<p>Reinforcement learning is an area of AI and ML looking at tasks where the computer has to take a series of moves in an uncertain and changing environment, to achieve a particular goal.</p>
-<p>Reinforcement Learning models learn through trial and error, and are given a <em>reward</em> signal if they achieve their goal. The models aim to optimise their reward. In practice, it's used much less than supervised and unsupervised learning. </p>
+<h2 id="what-is-reinforcement-learning">What is Reinforcement Learning?</h2>
+<p>Reinforcement learning is a type of machine learning aimed at tasks where the machine, or <em>agent</em>, has to take a series of moves in an uncertain and changing environment, to achieve a specific goal. The agent learns a strategy, or <em>policy</em>, that guides how to take actions based on the current state of the agent within the environment.</p>
+<p>A typical application of reinforcement learning is in playing games. Some of the biggest breakthroughs in the field have come through playing board games like Go, or video games like StarCraft. Reinforcement learning models optimise a <em>reward</em>. In gaming that reward would be high if they win the game, and low if they lose. In gaming, the environment is uncertain because there are multiple players, and it’s not possible to know what moves each player will make. It’s also not possible to know the winner of the game, and hence the final reward, until the game has completed. Thus, the correct choice of action by the agent at any time must take into account indirect and delayed consequences of that action in the future, and hence requires a form of <em>planning</em>.</p>
+<p>Another example of reinforcement learning is for controlling robots in a lab environment. Here, the sensors on the robot have some uncertainty in their measurements, and the lab environment may change based on what people in the lab are doing. The reward for the robot is high if they successfully complete their task, and low if they fail.</p>
+<p>Unlike supervised and unsupervised learning, which learn their behaviour from fixed datasets, reinforcement learning agents learn through repeated interactions with the environment. Agents begin with random behaviour, and through training in a trial-and-error fashion they learn to exhibit the desired behaviour. Often it is too time-consuming and expensive to learn entirely through direct interaction, and so a simulated environment is often used in training. This is why video games are a great testbed, as they are inherently a simulation.</p>
+<p>During learning, reinforcement learning algorithms rely on a mixture of <em>exploration</em>, or trying new actions to discover what works, and <em>exploitation</em>, which is trying actions that have already been proven to work in order to maximise the reward.</p>
+<p>In practice, reinforcement learning is used much less than supervised and unsupervised learning as it is more complicated to implement and to achieve good results.</p>
 <h2 id="reinforcement-learning-use-cases">Reinforcement Learning Use Cases</h2>
 <p>RL is used in scenarios like:</p>
 <ul>
-<li>Playing games, where the computer can choose to make optimal moves but there is some uncertainty about the moves its opponent may make. </li>
-<li>Human-computer dialogue, where again the computer can choose an optimal utterance, but there is uncertainty about what the person will say and how that affects the trajectory of the conversation. </li>
-<li>Controlling robots in real-world environments where there is uncertainty about how the environment changes over time.</li>
+<li>Playing games, where the computer can choose to make optimal moves but there is some uncertainty about the moves its opponent may make.</li>
+<li>Controlling robots in real-world environments such as the lab, where there is uncertainty about how the environment changes over time.</li>
+<li>Identification of novel drug candidates. In this task, actions available to the agent are modifications to molecules, and the reward function provides feedback about desired properties of the molecules. </li>
+<li>In quantum Physics, reinforcement learning has been applied to the problem of finding sequences of commands for manipulating the states of a quantum system in a controlled manner. </li>
 </ul>
 <p>In each of these tasks, it’s hard to judge in isolation whether a single turn or move by the computer is optimal. Yet, we do know in the long-term whether the computer achieves its goal.</p>
 <h2 id="inspiration">Inspiration</h2>

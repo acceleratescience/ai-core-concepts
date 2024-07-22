@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://acceleratescience.github.io/ai-core-concepts/practical/">
+        <link rel="canonical" href="https://acceleratescience.github.io/ai-core-concepts/paleo/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Some Practical Advice - Accelerate Science Core AI Concepts</title>
+        <title>Paleo - Accelerate Science Core AI Concepts</title>
       
     
     
@@ -77,11 +77,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#some-practical-advice" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -111,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Some Practical Advice
+              Paleo
             
           </span>
         </div>
@@ -328,88 +323,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Learning Objectives
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#computer-programming" class="md-nav__link">
-    <span class="md-ellipsis">
-      Computer Programming
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#open-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open Source
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#good-experimental-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      Good Experimental Practice
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sharing-your-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sharing your work
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#theory-in-depth" class="md-nav__link">
-    <span class="md-ellipsis">
-      Theory in-depth
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contact" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contact
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -427,38 +340,23 @@
   
 
 
-<h1 id="some-practical-advice">Some Practical Advice</h1>
-<h2 id="learning-objectives">Learning Objectives</h2>
-<p>This section will help you understand:</p>
-<ul>
-<li>Programming for implementing AI</li>
-<li>Managing experimentation</li>
-<li>Ways to share your work</li>
-</ul>
-<h2 id="overview">Overview</h2>
-<p>As AI has progressed, there are an increasing number of AI tools that are available to researchers. General tools like ChatGPT are generally available, while specific research tools for tasks like segmenting images &amp; searching scientific papers are being integrated into research workflows. Many researchers are moving beyond using pre-packaged tools and experimenting with applying AI to their own research field. </p>
-<h2 id="computer-programming">Computer Programming</h2>
-<p>If you choose to apply AI in your own research, you are going to need to learn some programming. Even if you don't intend to train your own models, but use models that have already been built by other researchers, you may find that programming is helpful to speed up your work.</p>
-<p>Most AI and ML work is done in Python. In some fields, R is used as an alternative. Python has great support for machine learning. There are many open-source software libraries available to use, such as scikit-learn, Pytorch and HuggingFace’s transformers. Software libraries are pre-written code that are available for you to use in your own work.</p>
-<p>Many researchers begin exploring ML code using Notebooks such as Jupyter or Google Colab. These can be a great way to get started exploring, but you might find that once you've made some good progress your code becomes unwieldy and you look for other ways to structure your work.</p>
-<p>Managing the code for your project is best done using a version control tool like GitHub. A tool like this will allow you to track the changes you make to your code, go back and forth between versions, and easily collaborate with colleagues.</p>
-<p>Remember that software comes with licences, and you must check the licence of any software you use to be sure you have the correct permissions to use it. Familiarise yourself with different software licences and their implications for using, modifying &amp; distributing your own software. </p>
-<h2 id="open-source">Open Source</h2>
-<p>There is a large open source AI community, with a practice of sharing models, data and code. These communities not only share resources, but also have community forums for support. It is highly recommended to explore the open source landscape before writing your own code and building your own models. It can save a lot of time and effort to build on existing work than to start from scratch. However, there is a wide range of quality in open source software. Projects that are actively maintained are generally more reliable.</p>
-<p>HuggingFace are an organisation that host a large repository of datasets and models that have been open sourced. </p>
-<h2 id="good-experimental-practice">Good Experimental Practice</h2>
-<p>Once you've got started with programming, the next challenge is usually managing experiments and tracking work.</p>
-<p>AI and Machine Learning projects are iterative, and typically you end up trying a lot of different models, hyperparameters, data sets and pre-processing pipelines. Modern AI libraries (like pytorch and scikit-learn) have easy-to-use implementations of many techniques, meaning that it’s easy to try multiple ideas. However, this means it can be easy to rapidly create lots of files and find your experiments hard to navigate.</p>
-<p>Experiment tracking tools like Weights and Biases, or MLflow, can provide ways to simplify the experiment structure. </p>
-<p>For recording your work, <a href="https://arxiv.org/abs/1810.03993">Model Cards</a> and <a href="https://arxiv.org/abs/1803.09010">Data Sheets</a> provide a structured way to log what you've built so that others can understand and build on your work. </p>
-<h2 id="sharing-your-work">Sharing your work</h2>
-<p>At the end of your project, sharing your model, data and code with the open source community is a possibility. Openness is key to scientific rigour, and published software is a recognised research output which can help with your career progression.</p>
-<p>Accelerate Science have a course on publishing and packaging software, which you can sign up to, or follow the materials online at your own pace.</p>
-<h2 id="theory-in-depth">Theory in-depth</h2>
-<p>If you decide to go further and want to understand the theory of AI in-depth, you’ll want to explore mathematical topics such as linear algebra, optimisation, probability and calculus. With some understanding of these topics, you’ll be able to dive into the theory of AI and ML, and you’ll have a foundation for designing your own models and algorithms.</p>
-<h2 id="contact">Contact</h2>
-<p>If you can't find what you need</p>
-<p><a class="md-button" href="mailto:accelerate-mle@cst.cam.ac.uk">CONTACT US <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></span></a></p>
+  <h1>Paleo</h1>
+
+<p>Data is a problem, being sparse and perhaps missing chunks of time. AI cannot reconstruct what's not there.</p>
+<p>Imaging techniques are used for looking at fossils.</p>
+<p>Classification, segmentation, and prediction are major tasks</p>
+<p>Microfossil classification - fossils with a size of &lt;1mm - a variety of sources including foraminifera, conodonts, algae, pollens &amp; other fragments. Can be done using CNNs (there's a reference to Beaufort et all, 2001, 2022). Preparing the data can be a challenge though, as still very manual. But many more micro fossils exist than macrofossils. </p>
+<p>(are there good microfossil datasets? you need large data for good CNNs)</p>
+<p>Microfossils are key indicators for many research fields.</p>
+<p>Transfer learning from regular image models.</p>
+<p>CNN is popular, but other methods used too, e.g. SVM, random forest. They may work better because of the sparse nature of paleontological data.</p>
+<p>Fossils are 3d... expensive to capture and not enough data for large scale AI methods. </p>
+<p>Segmentation recently developed for 2d and 3d fossil image.</p>
+<p>Prediction, like weather forecasting.</p>
+<p>Unsupervised learning can help with identifying and clustering species. There is some disagreement or personal bias that goes into defining the taxonomy for classification, can be subjective. Machines may be capable of discovering the hidden patterns in taxonomy.</p>
+<p>Data is key, and there is likely work to be done in the field to standardise data collection, organise and share, to create the kinds of datasets that are useful.</p>
+<p>They suggest that Generative AI models for reconstruction of soft tissue from fossils (diffusion).</p>
+<p>https://www.biorxiv.org/content/10.1101/2023.08.07.552217v1.full</p>
 
 
 

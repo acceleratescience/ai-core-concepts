@@ -392,9 +392,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#top-tips-for-getting-started" class="md-nav__link">
+  <a href="#case-study" class="md-nav__link">
     <span class="md-ellipsis">
-      Top Tips for getting started
+      Case Study
     </span>
   </a>
   
@@ -446,26 +446,33 @@
 <li>Some real-world examples of supervised learning in research</li>
 </ul>
 <h2 id="what-is-supervised-learning">What is supervised learning?</h2>
-<p>Supervised learning is one of the most widely used types of machine learning in the field of AI. Supervised models make predictions about their inputs. They learn how to make those predictions from a dataset of examples that are labelled with the correct prediction (also called the <em>ground truth</em>).</p>
-<p>Our job in using supervised learning is to define what the input and output of a model should be, to obtain the labelled data, and then to train the model to make accurate predictions. </p>
+<p>Supervised learning is the most widely used type of machine learning algorithm, and it’s been widely applied across scientific fields. For example, in Chemistry it’s been used to predict the outcomes of reactions, in Materials Science to predict properties of new materials, in Climate Science for weather forecasting, in Biology for identifying cell types, and in Medicine for segmenting and classifying medical images.</p>
+<p>Supervised learning has a broad range of applications in science, providing powerful tools for prediction, classification, and analysis. It enables researchers to extract insights from complex datasets, driving advancements across scientific disciplines.</p>
+<p>Supervised models make predictions about their inputs. They learn how to make those predictions from a dataset of examples that are labelled with the correct prediction (also called the <em>ground truth</em>). One downside of supervised learning is that the dataset of examples can be expensive to obtain, especially if a person has to take the time to go through the data and manually annotate each example with its label.</p>
 <p><img align="center" alt="Supervised Learning" src="../imgs/sup1.png" /></p>
-<p>One example of supervised learning is that of predicting whether an email is spam or not. In this example, there are two <em>categories</em>, or <em>classes</em> - SPAM and NOT_SPAM.</p>
-<p>Our machine learning models cannot directly accept email text as input, so first we extract numerical features from each of the emails. Three features might be, for example, the length of the email, the number of spelling mistakes, and the number of dollar signs in the email. </p>
+<p>When designing a supervised learning algorithm, researchers need to define what the input and output of a model should be, to obtain the labelled data for training, and then train the model to make accurate predictions.</p>
+<p>One example of supervised learning is predicting whether an email is spam or not. In this example there are two <em>categories</em>, or <em>classes</em> to which an email might belong: SPAM and NOT_SPAM. A supervised learning algorithm for identifying spam emails would be trained on a dataset of emails labelled by whether they really are spam messages or not.</p>
+<p>Machine learning models cannot directly accept email text as input, so numerical features are first extracted from each of the emails. Two features might be, for example, the length of the email, the number of spelling mistakes.</p>
 <p><img align="center" alt="Spam Email Detection" src="../imgs/sup2.png" /></p>
-<p>By training the model directly on a dataset of emails that have been labelled as being spam or not, the model can learn the patterns that identify the two types of email, and then predict for a new email whether it is spam or not. </p>
+<p>By training the model directly on a dataset of emails that have been labelled as being spam or not, the model can learn the patterns that identify the two types of email, and then predict for a new email whether it is spam or not.</p>
 <h2 id="classification-and-regression">Classification and Regression</h2>
-<p>Supervised learning can either be <strong>classification</strong> or <strong>regression</strong>.</p>
-<p><strong>Classification</strong> is where the output is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection.  You can think of the model as finding a line to separate the two classes, as here:</p>
+<p>Supervised learning can either be <strong>classification</strong> or <strong>regression</strong>. You will need to choose between these two modes depending on the task you are modelling and the data you have collected.</p>
+<p><strong>Classification</strong> is where the output of the model is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection. Another example of a binary classification task is that of predicting whether a new drug candidate is toxic or not. You can think of the model as finding a line to separate the two classes, as shown here:</p>
 <p><img align="center" alt="Binary Classification" src="../imgs/sup3.png" /></p>
-<p>Usually, there's some overlap between our classes, but we can find a good way to separate them. Usually though, classifiers find a way to separate two classes that is more complex than just a straight line. </p>
-<p>A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category.</p>
+<p>Usually, there's some overlap between the two classes, so it’s not possible for a model to completely separate them. In the example above, some examples of spam email fall to the left of the line and are misclassified as non-spam, while some examples of non-spam email fall to the right and are wrongly identified as spam. This example also shows the model as a straight line separating the two classes. Typically, supervised learning models find a way to separate the classes that’s more complex than a straight line.</p>
+<p>A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. In Physics, a multi-class classification task could be galaxy classification, classifying the type of galaxy in an image.</p>
 <p><img align="center" alt="Multi-class Classification" src="../imgs/sup4.png" /></p>
 <p>In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called <em>multi-label</em> classification, because each photo has more than one label associated with it.</p>
-<p>Sometimes the number of classes can be very large, in the thousands or millions, as in the case of many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. </p>
-<p><strong>Regression</strong> is similar to classification, except that the output is a continuous number rather than a discrete class. Examples might be predicting the toxicity of a molecule on a scale. Fitting a line of best fit is a simple kind of regression. </p>
+<p>Sometimes the number of classes can be very large, even into the thousands or millions, as is the case with many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. As languages have many thousands of words, then the number of output classes is also in the thousands. </p>
+<p><strong>Regression</strong> is similar to classification, except that the output is a continuous number rather than a discrete class. An example might be predicting the BMI of a patient based on blood test biomarkers. Fitting a line of best fit is a simple kind of regression.</p>
 <p><img align="center" alt="Regression" src="../imgs/sup5.png" /></p>
 <h2 id="feature-extraction">Feature Extraction</h2>
-<p>It's worth noting that machine learning models require numerical inputs, and you'll need to consider in designing your setup. Some tasks naturally have numerical inputs already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to a numerical format by extracting <em>features</em>.</p>
+<p>Machine learning models require numerical inputs, and you'll need to consider that in designing your setup. Some tasks naturally have numerical inputs, or <em>features</em>, already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to a numerical format by extracting features.</p>
+<p>For the spam email task, we extract two features from each email, giving a 2-dimensional feature vector:</p>
+<p><img align="center" alt="Feature Extraction" src="../imgs/sup6.png" /></p>
+<p>In a different task, in an example clinical setting, there might extract eight features about each patient, and they’re combined into an 8-dimensional feature vector:</p>
+<p><img align="center" alt="Feature Extraction" src="../imgs/sup7.png" /></p>
+<p>In other scenarios, the feature vectors might have hundreds or thousands of dimensions. </p>
 <h2 id="examples-of-supervised-learning">Examples of Supervised Learning</h2>
 <p>Examples of supervised learning tasks include:</p>
 <table>
@@ -478,12 +485,17 @@
 </thead>
 <tbody>
 <tr>
-<td>Segment tumours in medical images</td>
+<td>Identify and segment tumours in medical images</td>
 <td>Medical images</td>
-<td>Areas which are tumours</td>
+<td>Areas in the image corresponding to tumours</td>
 </tr>
 <tr>
-<td>Toxicity prediction</td>
+<td>Predict patient's BMI from biomarkers</td>
+<td>Biomarkers</td>
+<td>BMI</td>
+</tr>
+<tr>
+<td>Predicting whether a new drug candidate is toxic or not</td>
 <td>Chemical formula</td>
 <td>Toxicity</td>
 </tr>
@@ -509,19 +521,20 @@
 <ul>
 <li>Linear Regression</li>
 <li>Logistic Regression</li>
+<li>Linear Discriminant Analysis</li>
 <li>Decision Trees </li>
 <li>Support Vector Machines</li>
+<li>Random Forests</li>
 <li>Neural Networks</li>
 </ul>
-<p>Much of the recent excitement around AI focuses on neural network approaches. However, depending on your data and task, the other algorithms may be more practical to use.</p>
-<h2 id="top-tips-for-getting-started">Top Tips for getting started</h2>
-<ol>
-<li>A great place to begin is by thinking about the task you want to used supervised learning for. Can you define your task as a supervised learning one? What are the inputs and predictions of your model?</li>
-<li>Next, think about the data you have. Can you label it easily?</li>
-<li>Evaluating your model is also important, and at this point it's feasible to think about how you'll evaluate whether your system is working. What metrics could you use?</li>
-<li>What are the risks and concerns with your proposed work?</li>
-</ol>
-<p>Once you've answered these questions, you're ready to move onto training a model.</p>
+<p>Much of the recent excitement around AI focuses on neural network approaches. However, depending on your data and task, the other algorithms may be more practical to use. The choice of which algorithm to use will depend on several factors such as how much data you have, how complex your task is, and how much computational power you have available. In practice, researchers may try several different algorithms, starting with the simplest, and compare their performance to discover which works best. </p>
+<h2 id="case-study">Case Study</h2>
+<p>Healthcare; Dr Christopher Bannon</p>
+<p>Obesity is a risk factor for conditions like type-2 diabetes, and scientists have been using AI methods to help understand the effect of obesity on the body. In particular, understanding the effect of specific hormone levels can open up the path to better understanding of the biology of obesity.</p>
+<p>This study had a group of 205 participants in obese and non-obese groups. Participants in both groups fasted overnight, and then were given a standardised meal. Levels of two hormones from the gut (PPY and GIP), and two pancreatic hormones (insulin and glucagon), were measured from blood samples using a technique called immunoassay. The hormones were measured before and after eating, giving 8 readings in total.</p>
+<p>A supervised learning algorithm - Linear Regression - was used to predict body mass index (BMI) from these hormone level readings. With a set of 205 participants, the number of features was chosen to be small and avoid overfitting. 4 hormone levels were selected from the 8 measured, and two different regression models were built - one for obese, and one for non-obese, participants.</p>
+<p>One advantage of linear regression, as compared to more complex supervised learning algorithms, is that it's possible to look inside the model and examine the impact that each feature has on the prediction. By using linear regression to predict BMI from hormone levels, it's feasible to see the contribution of each hormone to the BMI prediction. Results showed that gut hormones PYY and GIP, and pancreatic hormones insulin and glucagon, showed strong relationships with BMI in non-obese subjects. In obese participants however, the major BMI correlations were with pancreatic hormones only.</p>
+<p>Paper: <a href="https://www.sciencedirect.com/science/article/pii/S0196978124000391">https://www.sciencedirect.com/science/article/pii/S0196978124000391</a></p>
 <h2 id="inspiration">Inspiration</h2>
 <p>Find more examples of research using supervised learning on Accelerate's blog:</p>
 <ul>
@@ -529,6 +542,7 @@
 <li><a href="https://acceleratescience.github.io/machine-learning/2024/01/08/how-can-we-use-ai-to-help-smallholder-farmers-in-uganda.html">Joyce Nakatumba-Nabende discusses how speech recognition can be deployed to help farmers in Uganda</a></li>
 <li><a href="https://acceleratescience.github.io/accelerate-spark-data-science-residency/2024/01/31/can-we-use-ai-to-better-treat-brain-cancer.html">Yizhou Wan tells us how AI can be used to segment brain tumours in images, and to estimate their volume</a></li>
 <li><a href="https://acceleratescience.github.io/accelerate-spark-data-science-residency/machine-learning/2024/02/19/how-can-we-use-ai-to-advance-metabolic-medicine.html">Chris Bannon hopes to predict whether someone's gut biome or metabolic marker levels are that of a healthy person, or whether they have a metabolic or bowel condition</a></li>
+<li><a href="https://acceleratescience.github.io/machine-learning/2023/10/16/how-can-we-use-ai-to-map-trees.html">Dr Toby Jackson uses supervised learning to identify trees from satellite images, which can be used to track progress against the city’s goal to increase tree cover</a> </li>
 </ul>
 <h2 id="contact">Contact</h2>
 <p>If you can't find what you need</p>

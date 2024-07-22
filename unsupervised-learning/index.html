@@ -347,9 +347,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#what-is-unsupervised-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      What is Unsupervised Learning?
     </span>
   </a>
   
@@ -404,29 +404,40 @@
 <h2 id="learning-objectives">Learning Objectives</h2>
 <p>This section will help you understand:</p>
 <ul>
-<li>What unsupervised learning is, and where you can use it</li>
-<li>Unsupervised learning tasks including clustering, outlier detection and dimensionality reduction</li>
+<li>What unsupervised learning is</li>
+<li>Unsupervised learning algorithms including clustering, anomaly detection and dimensionality reduction</li>
 <li>Some real-world examples of unsupervised learning in research</li>
 </ul>
-<h2 id="overview">Overview</h2>
-<p>Supervised learning is the most popular form of AI. However, supervised learning requires labelled data, which can be difficult or expensive to obtain. Most of the data in the world is unlabelled. Unsupervised learning helps us make sense of unstructured and unlabelled data.</p>
-<p>Three common unsupervised algorithms are <em>clustering</em>, <em>dimensionality reduction</em> and <em>anomaly detection</em>.</p>
+<h2 id="what-is-unsupervised-learning">What is Unsupervised Learning?</h2>
+<p>Most data in the world is unlabelled. Unsupervised learning helps make sense of unstructured and unlabelled data. It’s been used across scientific fields, for example, in Medicine discovering sub-groups of participants in medical studies, in Physics identifying rare astrophysical events, and in Archeology grouping archeological sites to determine which might be related to each other.</p>
+<p>Unsupervised learning is invaluable in scientific research for discovering hidden patterns, segmenting data, and reducing complexity in large datasets. It allows scientists to make sense of vast amounts of data and generate hypotheses that can be tested in further research.</p>
+<p>Three common unsupervised algorithms are clustering, dimensionality reduction and anomaly detection. One or more of these algorithms may be helpful to you if you have unlabelled data to explore. </p>
 <h2 id="unsupervised-learning-algorithms">Unsupervised Learning Algorithms</h2>
+<p>Three common unsupervised algorithms are <em>clustering</em>, <em>dimensionality reduction</em> and <em>anomaly detection</em>.</p>
 <p><strong>Clustering</strong></p>
-<p>Clustering is the process of taking your data and discovering sub-groups, or clusters, that are sufficiently similar to each other. Unlike classification in supervised learning, where we know the groups ahead of time, clustering uncovers the structure of the groups in a larger population.</p>
-<p>Suppose you're working with medical data. You know that some groups of people respond differently to treatment than others, but you don't know the factors that drive this. A clustering algorithm might group your participants into different clusters that potentially allow you to better explain what's going on.</p>
+<p>Clustering is a technique that helps uncover structure in your data by discovering sub-groups within a larger dataset. It’s a technique that may be useful to explore if you believe that your data contains different sub-groups, and you’d like to discover them.</p>
+<p>Across disciplines, clustering finds many applications. For example, you may be working with medical data about a specific treatment, and you notice that some people respond differently than others. If you don’t know the factors that drive this difference, then clustering may help you uncover different sub-groups that respond in different ways to the treatment. In Biology it can be used to group cells and identify distinct types of cell in the body. In the social sciences, individuals in behavioural studies can be grouped based on their behaviour. In Materials Science, materials can be grouped according to their similar behaviour in specific scenarios. </p>
 <p><img align="center" alt="Clustering" src="../imgs/cluster1.png" /></p>
-<p>Other places that people have used clustering include uncovering structure in archeological data, clustering sounds and speakers together, identifying sub-groups of study participants etc. </p>
-<p>K-means and DBSCAN are popular clustering algorithms. You may need to give the number of clusters before running the clustering algorithm, or you might use an automated method to try and find which number of clusters best fits the data. </p>
+<p>Unlike classification in supervised learning, where we know the groups ahead of time, clustering uncovers the unknown structure of sub-groups in a larger population. Clustering does not name the groups it uncovers, or provide any interpretation. Researchers must themselves examine and interpret the clusters to determine whether they are valid and useful, perhaps even by using the results to generate new research hypotheses to test experimentally.</p>
+<p>There are many different clustering algorithms available to use. Two of the most popular and well-used are k-means clustering and DBSCAN. These are great starting points for any researcher interested in exploring clustering on their data. </p>
 <p><strong>Dimensionality reduction</strong></p>
-<p>High dimensional data is hard to work with. The first thing we usually notice is that it's hard to visualise well in high dimensions, so that you can explore what the data looks like. A high number of dimensions also imacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model and more data you need. This is the <em>curse of dimensionality</em>.</p>
-<p>Reducing the dimensionality of your data can be one way to work with it effectively. Projecting down to 2- or 3-dimensions means that you can plot it on a graph to view.</p>
+<p>High dimensional data - ie data with a large number of features - is very common in scientific fields but is hard to work with. High dimensional data can come from different sources. Sensor data, weather data, large hadron collider data, spectroscopy, even survey data in the social sciences, can all generate many hundreds or thousands of features. Dimensionality reduction techniques are typically used in two ways - to visualise data, and to reduce the number of dimensions before applying another algorithm like clustering or supervised learning.</p>
+<p>It is difficult to visualise high-dimensional data well so that you can explore what it looks like. Reducing the dimensionality of your data is one way to visualise it effectively. Projecting down from tens, hundreds or thousands of dimensions to 2- or 3-dimensions means that you’re able to plot your data on a graph to view.</p>
 <p><img align="center" alt="Dimensionality Reduction" src="../imgs/dimred.png" /></p>
-<p>Principal Component Analysis (PCA), <a href="https://distill.pub/2016/misread-tsne/">t-SNE</a>, and <a href="https://pair-code.github.io/understanding-umap/">UMAP</a> are popular dimensionality reduction algorithms that you might see used. </p>
+<p>Principal Component Analysis (PCA), <a href="https://distill.pub/2016/misread-tsne/">t-SNE</a>, and <a href="https://pair-code.github.io/understanding-umap/">UMAP</a> are popular dimensionality reduction algorithms that you might see used for visualisation of high-dimensional data.</p>
+<p>A high number of dimensions also makes using algorithms like supervised learning and clustering difficult. Dimensionality impacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model you must build and more data you need. This is known as the <em>curse of dimensionality</em>. When you have a small amount of data, you must be sure to keep the number of features and the number of model parameters well below the number of examples in your dataset.</p>
+<p>Dimensionality reduction algorithms are often used on high-dimensional data to reduce the number of dimensions, before then using another algorithm like clustering or supervised learning. This low-dimensional representation of a higher-dimension space is called the <em>latent space</em>. For example, in Astrophysics, PCA has been used to reduce the dimension of spectroscopy data, before doing supervised classification to determine the type of stellar object. In Biology, PCA can be used to reduce the high-dimensional gene expression data, which can be thousands of features, to a low-dimensional latent space before doing further experiments. 
+High-dimensional datasets are common across scientific disciplines, and dimensionality reduction techniques allow researchers to reduce the complexity of their data to work with it more effectively. </p>
 <p><strong>Anomaly Detection</strong></p>
-<p>Anomoly detection is identifying anomolous or rare examples in a dataset, that are inconsistent with the rest of the dataset.</p>
+<p>Anomaly detection is identifying anomalous or rare examples in a dataset that are inconsistent with the rest of the dataset. Identifying rare events can be valuable in domains that generate lots of data, where you’re looking for a ‘needle in a haystack’, and doing so manually is very time-consuming. These rare events can then become the subject of future research. They can also be valuable when timely identification of an event is crucial, like ahead of a natural disaster, when automated methods can be faster than a person.</p>
 <p><img align="center" alt="Anomoly Detection" src="../imgs/anomoly1.png" /></p>
-<p>Examples of this might be in identifying fraudulent and unusual bank transactions, or identifying unusual behaviour that might be a cybersecurity threat. </p>
+<p>Scientific applications of anomaly detection include:</p>
+<ul>
+<li>Astrophysics - detecting short-lived events (known as transients) such as supernovae, or identifying scientifically interesting objects like exoplanets </li>
+<li>Climate Science - identifying rare weather events or giving early signs of natural disasters such as predicting earthquakes from seismic data, or wildfire risk from weather patterns</li>
+<li>Medicine - identifying abnormalities in lab results e.g. triaging patients based on CT brain scans, or identifying malignant tumours as outliers in medical images</li>
+</ul>
+<p>Anomaly detection can help researchers identify significant, unusual events that can lead to important discoveries, and provide early warnings for other scenarios. </p>
 <h2 id="inspiration">Inspiration</h2>
 <p>Find more examples of research using unsupervised learning on Accelerate's blog:</p>
 <ul>
