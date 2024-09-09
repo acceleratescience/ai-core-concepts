@@ -14,7 +14,7 @@ This section will help you understand:
 
 Model training is at the heart of an AI project. It’s the process of feeding data examples to your model so that it can learn the patterns that are present. In supervised learning and generative AI, the model learns from data examples and their labels. In unsupervised learning, the model learns just from the data examples with no labels. In reinforcement learning, the model learns through interaction with the real world, or a simulation of it.
 
-Models themselves consist of _parameters_, and training is the process of learning the values of those parameters. A linear regression model trained on one dataset might have the same number of parameters as that trained on another, but the learned parameter values, or _weights_, are different because they've been learned from the different training datasets.
+Models themselves consist of _parameters_, or _weights_, and training is the process of learning the values of those parameters. A linear regression model trained on one dataset might have the same number of parameters as that trained on another, but the learned parameter values are different because they've been learned from the different training datasets.
 
 The number of parameters varies wildly between models. A small linear regression model might have in the order of 10 parameters, while a state-of-the-art generative AI model might have 10 billion or more parameters. Larger models require more time & computational power to train - often needing multiple GPUs for the largest models - while small models can be trained locally in minutes on just a CPU. Complex tasks typically need larger models for acceptable performance.
 
@@ -36,7 +36,7 @@ Many implementations of AI model training have good default settings for the hyp
 
 
 
-There are many places in ML training where randomness is used. Examples include the random initialisation of weights (parameters) at the beginning of training, the hardware that you’re building on, or the random shuffling of the data that you’re using for training.
+There are many places in ML training where randomness is used. Examples include the random initialisation of weights (parameters) at the beginning of training, the hardware that you’re building on, or the random shuffling of the data that you’re using for training. Randomness is essential to the performance of ML models, but can also prevent reproducibility of your work. 
 
 Two ways to account for randomness are:
 
@@ -54,13 +54,15 @@ Two ways that training can be derailed are over- and under-fitting.
 
 **Under-fitting** is the opposite, where a model is too simplistic to capture details of the training data. You might have a lot of data and a simple model, so the model isn't able to approximate the data well. In this case the model will perform poorly on both your training and test set.
 
-## Issues with training
+## Training vs Finetuning
 
 You do not always need to train a model from scratch. Often, there can be a model out there which you can use as a starting point. Then, you would finetune that model to your data, or use transfer learning.
 
 **Finetuning** is where you keep the model architecture as it is, and just train the model a bit more on your data.
 
 **Transfer learning** is similar to finetuning, but with the understanding that you're training the model for a different task than the one it was originally trained to do. With neural networks, this typically means replacing the last layer with one which is designed for your task.
+
+The advantage of starting from an existing pretrained model is that you typically don't need as large a dataset as you would if training a model entirely from scratch. 
 
 ## Contact
 

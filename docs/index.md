@@ -6,7 +6,7 @@ AI and data-driven techniques have the potential to revolutionise research. AI i
 
 This short set of online resources explain some of the core concepts behind AI. They're not a full introduction to the theory and practice of AI, but a starting point for researchers who are interested in exploring applied AI in their work.
 
-The first part dives into some of these AI core concepts and builds up an intuition about how AI systems work, without relying on you having any specific maths and computer programming knowledge. This will help you understand how and where AI might be useful in your research, demystify some of the field's vocabulary, and give you the basis to dig further. The second part of the course talks about some of the practicalities and process of building AI systems, signposting ways to get started. This can help you interpret research papers in AI, and to get a sense of the work involved if you choose to go ahead and implement AI in your work.
+The first part dives into some of these AI core concepts and builds up an intuition about how AI systems work, without relying on you having any specific maths and computer programming knowledge. This will help you understand how and where AI might be useful in your research, demystify some of the field's vocabulary, and give you the basis to dig further. The second part talks about some of the practicalities and process of building AI systems, signposting ways to get started. This can help you interpret research papers in AI, and to get a sense of the work involved if you choose to go ahead and implement AI in your work.
 
 
 

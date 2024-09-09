@@ -16,12 +16,12 @@ Broadly speaking, generative AI refers to models that generate content, often in
 
 ![Generative AI](imgs/gen1.png){ align=center }
 
-In many ways, generative AI is similar to supervised learning. The predictions that the models make are predictions about the content itself. You might hear the term _self-supervised_ to describe these models. This is because a person isn’t needed to label the data as the supervision signal is present within the data itself.
+In many ways, generative AI is similar to supervised learning. The key point in generative AI though is that predictions the models make are predictions about the content itself. A generative model that generates text is making predictions about the text. A generative model in the realm of drug design is making predictions about potential new molecule structures. The term  _self-supervised_ is often used to describe these models. This is because a person isn’t needed to label the data as the supervision signal is present within the data itself.
 
 ## Generative AI and Text
 
 
-In the field of natural language processing (NLP), _transformer_ models have had a large impact. Generative AI in NLP uses the task of _language modelling_ - the task of predicting the next word in a sentence. This is a supervised learning task. Given a sequence of words, the model's goal is to predict the next word. It doesn’t require large amounts of effort to label the text data for training because “next word” is inherently there in the data. A language model is essentially a very powerful autocomplete model. Additional types of training are used to turn a basic language model from an autocomplete into an interactive chat model like ChatGPT.
+In the field of natural language processing (NLP), _transformer_ models have had a large impact. Generative AI in NLP uses the task of _language modelling_ - the task of predicting the next word in a sentence. This is a supervised learning task. Given a sequence of words, the model's goal is to predict the next word. It doesn’t require large amounts of effort to label the text data for training because “next word” is inherently there in the data. A language model is essentially a very powerful autocomplete model. Additional types of training, or finetuning, are used to turn a basic language model from a model that autocompletes text into an interactive chat model like ChatGPT.
 
 What’s interesting about Generative AI models for NLP is that when trained on large amounts of data, they are able to do several tasks that they weren’t explicitly trained to do. For example, as their training data includes a large amount of multilingual training data, they are able to translate between languages. This is described as _zero shot learning_.
 
@@ -53,7 +53,7 @@ Generative AI models are expensive to train, due to their large size and the lar
 There are some considerations to take into account when using foundation models that have been trained by an outside organisation:
 
 - For many public models, there are varying levels of openness. Often the model weights might be available, but details about the training set may not be public. This lack of transparency can make it difficult, as a researcher, to fully know how your AI model has been trained.
-- If a model is hosted by an organisation behind an API, we cannot be sure what changes they are making, and that can affect reproducibility
+- If a model is hosted by an organisation behind an API, we cannot be sure what changes they are making, and that can affect reproducibility of experiments.
 - These models are typically trained on large amounts of data from the internet, which brings with it societal biases that become embedded in the model.
 - There's a large environmental cost to using these models.
 
@@ -70,9 +70,9 @@ Here are two papers that look at applications of some of these models:
 
 Generative AI is a fast moving field, and details such as how to evaluate these models are open research questions. Accelerate Science has two workshops related to generative AI, each with online material that you can work through at your own pace: 
 
+- [Large Language Models](https://docs.science.ai.cam.ac.uk/large-language-models/)
+- [Diffusion models](https://docs.science.ai.cam.ac.uk/diffusion-models/)
 
-- LLMs
-- Diffusion Models
 
 
 ## Contact

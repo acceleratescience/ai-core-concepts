@@ -51,15 +51,16 @@ It is difficult to visualise high-dimensional data well so that you can explore 
 
 Principal Component Analysis (PCA), [t-SNE](https://distill.pub/2016/misread-tsne/), and [UMAP](https://pair-code.github.io/understanding-umap/) are popular dimensionality reduction algorithms that you might see used for visualisation of high-dimensional data.
 
-A high number of dimensions also makes using algorithms like supervised learning and clustering difficult. Dimensionality impacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model you must build and more data you need. This is known as the _curse of dimensionality_. When you have a small amount of data, you must be sure to keep the number of features and the number of model parameters well below the number of examples in your dataset.
+A high number of dimensions also makes using algorithms like supervised learning and clustering difficult. High dimensionality data requires you to build models with a large number of parameters, to effectively model your data. The more parameters a model has, the more data you need. This is known as the _curse of dimensionality_. High dimensional data necessitates large datasets. 
 
-Dimensionality reduction algorithms are often used on high-dimensional data to reduce the number of dimensions, before then using another algorithm like clustering or supervised learning. This low-dimensional representation of a higher-dimension space is called the _latent space_. For example, in Astrophysics, PCA has been used to reduce the dimension of spectroscopy data, before doing supervised classification to determine the type of stellar object. In Biology, PCA can be used to reduce the high-dimensional gene expression data, which can be thousands of features, to a low-dimensional latent space before doing further experiments. 
+Dimensionality reduction algorithms are often used on high-dimensional data to reduce the number of dimensions, before then using another algorithm like clustering or supervised learning. This low-dimensional representation of a higher-dimension space is called the _latent space_. For example, in Astrophysics, PCA has been used to reduce the dimension of spectroscopy data, before doing supervised classification to determine the type of stellar object. In Biology, PCA can be used to reduce the high-dimensional gene expression data, which can be thousands of features, to a low-dimensional latent space before doing further experiments.
+
 High-dimensional datasets are common across scientific disciplines, and dimensionality reduction techniques allow researchers to reduce the complexity of their data to work with it more effectively. 
 
 
 **Anomaly Detection**
 
-Anomaly detection is identifying anomalous or rare examples in a dataset that are inconsistent with the rest of the dataset. Identifying rare events can be valuable in domains that generate lots of data, where you’re looking for a ‘needle in a haystack’, and doing so manually is very time-consuming. These rare events can then become the subject of future research. They can also be valuable when timely identification of an event is crucial, like ahead of a natural disaster, when automated methods can be faster than a person.
+Anomaly detection is identifying anomalous or rare examples in a dataset that are inconsistent with the rest of the dataset. Identifying rare events can be valuable in domains that generate lots of data, where you’re looking for a ‘needle in a haystack’, and doing so manually is very time-consuming. These rare events can then become the subject of future research. They can also be valuable when timely identification of an unusual event is crucial, like ahead of a natural disaster, when automated methods can be faster than a person.
 
 ![Anomoly Detection](imgs/anomoly1.png){ align=center }
 

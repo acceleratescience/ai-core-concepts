@@ -27,7 +27,7 @@ If you want to work with text data in your field, the chances are good that you'
 -  **Question Answering** answering questions where the answer can be found in a text that has been provided. E.g. answering questions from a given textbook.
 -  **Sentiment Analysis** analysing whether a piece of text is positive or negative in its sentiment.
 -  **Named Entity Recognition** picking out certain key entities from a phrase. For example, picking out names of molecules, drugs or diseases from text.
--  **Text classification** assigns predefined categories to text documents.
+-  **Text classification** assigns predefined categories to text documents such as genre of a paper.
 -  **Coreference resolution** identifies which references to people or objects in a text are referring to the same entity, such as when “it” and “the paper” are referring to the same item
 -  **Semantic similarity** is identifying whether two pieces of text have similar meanings
 -  **Relation extraction** identifies relations between two entities in text, like “Paris is a city” or “the apple is green”.
@@ -52,7 +52,7 @@ There are many sources of text data available to researchers. Examples of NLP wo
 
 ## Resources
 
-NLP & generative AI are covered in our workshop on large language models
+NLP & generative AI are covered in our 1-day workshop on [Large Language Models](https://docs.science.ai.cam.ac.uk/large-language-models/). The material and associated code are available online.
 
 ## Contact
 

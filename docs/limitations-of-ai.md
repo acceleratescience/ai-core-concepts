@@ -1,4 +1,4 @@
-# Responsible Research and Innovation
+# Limitations of AI
 
 
 ## Learning Objectives
@@ -18,13 +18,13 @@ Models don't have 100% **accuracy**, and so aren't appropriate for all scenarios
 
 The **black-box** nature of many models means that it can be difficult to understand or interpret why AI models make the predictions that they do. For some domains, this can be challenging.
 
-**Hallucinations or confabulations** are the name given to a specific kind of error made by language models outputting factually incorrect information.
+**Hallucinations or confabulations** are the name given to a specific kind of error made by language models outputting factually incorrect information. While it's possible to reduce the hallucination rate, eliminating hallucinations entirely is a challenge. 
 
 ## Third Party Tools
 
 The use of third party tools like ChatGPT are increasingly common as part of scientific research.
 
-Take care when uploading data to a third party tool. Information that you upload may be stored by them and used for model training or other purposes. Data protection laws like GDPR may be applicable here when dealing with personal data, but also consider the risk in uploading unpublished data or work. Many services have an option to opt-out of them storing your data, so be sure to check the settings you are using. There’s a need to be transparent about your use of AI with participants, and inform them that their data may be shared with a third party. 
+Take care when uploading data to a third party tool. Information that you upload may be stored by them and used for model training or other purposes. Data protection laws like GDPR may be applicable when dealing with personal data, but also consider the risk of uploading unpublished data or work to a third party service. Many services have an option to opt-out of them storing your data, so be sure to check the settings you are using. There’s a need to be transparent about your use of AI with research participants, and inform them that their data may be shared with a third party. 
 
 
 ## Risks, Concerns and Scientific Integrity

@@ -29,7 +29,7 @@ Remember that software comes with licences, and you must check the licence of an
 
 There is a large open source AI community, with a practice of sharing models, data and code. These communities not only share resources, but also have community forums for support. It is highly recommended to explore the open source landscape before writing your own code and building your own models. It can save a lot of time and effort to build on existing work than to start from scratch. However, there is a wide range of quality in open source software. Projects that are actively maintained are generally more reliable.
 
-HuggingFace are an organisation that host a large repository of datasets and models that have been open sourced. 
+HuggingFace are an organisation that host a large repository of datasets and models that have been open sourced. It's a great place to start looking for data and models that are relevant to your task.
 
 
 ## Good Experimental Practice
@@ -46,7 +46,7 @@ For recording your work, [Model Cards](https://arxiv.org/abs/1810.03993) and [Da
 
 At the end of your project, sharing your model, data and code with the open source community is a possibility. Openness is key to scientific rigour, and published software is a recognised research output which can help with your career progression.
 
-Accelerate Science have a course on publishing and packaging software, which you can sign up to, or follow the materials online at your own pace.
+Accelerate Science have a course on [publishing and packaging software](https://docs.science.ai.cam.ac.uk/packaging-publishing/), which you can sign up to, or follow the materials online at your own pace.
 
 ## Theory in-depth
 

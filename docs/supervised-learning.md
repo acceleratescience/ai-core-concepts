@@ -41,26 +41,26 @@ Supervised learning can either be **classification** or **regression**. You will
 
 Usually, there's some overlap between the two classes, so it’s not possible for a model to completely separate them. In the example above, some examples of spam email fall to the left of the line and are misclassified as non-spam, while some examples of non-spam email fall to the right and are wrongly identified as spam. This example also shows the model as a straight line separating the two classes. Typically, supervised learning models find a way to separate the classes that’s more complex than a straight line.
 
-A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. In Physics, a multi-class classification task could be galaxy classification, classifying the type of galaxy in an image.
-
+A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. In Physics, a multi-class classification task could be galaxy classification, classifying the type of galaxy in an image. In this example, the classifier learns to separate three categories:
 
 
 ![Multi-class Classification](imgs/sup4.png){ align=center }
 
+
+Sometimes the number of classes can be very large, even into the thousands or millions, as is the case with many language processing tasks. Automatically translating text from one source language to another target language is a supervised task, where the model predictions are words in the target language. As languages have many thousands of words, then the number of output classes is also in the thousands. 
+
 In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called _multi-label_ classification, because each photo has more than one label associated with it.
 
-Sometimes the number of classes can be very large, even into the thousands or millions, as is the case with many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. As languages have many thousands of words, then the number of output classes is also in the thousands. 
 
-
-**Regression** is similar to classification, except that the output is a continuous number rather than a discrete class. An example might be predicting the BMI of a patient based on blood test biomarkers. Fitting a line of best fit is a simple kind of regression.
+**Regression** is similar to classification, except that the output is a continuous number rather than a discrete class. An example might be predicting the BMI of a patient based on blood test biomarkers. Fitting a line of best fit is a simple kind of regression, as in this example:
 
 ![Regression](imgs/sup5.png){ align=center }
 
 ## Feature Extraction
 
-Machine learning models require numerical inputs, and you'll need to consider that in designing your setup. Some tasks naturally have numerical inputs, or _features_, already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to a numerical format by extracting features.
+Machine learning models require numerical inputs, and you'll need to consider that in designing your setup. Some tasks naturally have numerical inputs, or _features_, already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to numbers by extracting features.
 
-For the spam email task, we extract two features from each email, giving a 2-dimensional feature vector:
+For the spam email task described above, we extract two features from each email, giving a 2-dimensional feature vector:
 
 ![Feature Extraction](imgs/sup6.png){ align=center }
 
@@ -68,7 +68,7 @@ In a different task, in an example clinical setting, there might extract eight f
 
 ![Feature Extraction](imgs/sup7.png){ align=center }
 
-In other scenarios, the feature vectors might have hundreds or thousands of dimensions. 
+In other scenarios, the feature vectors might have hundreds or thousands of dimensions. Perhaps you have a sensor measuring many readings, or lengthy gene expression data in a bioinformatics task. Still, whether you have a small number of features, or many thousands, the first task is to convert it into numbers that can be input to a machine learning model. 
 
 ## Examples of Supervised Learning
 
@@ -86,7 +86,7 @@ Examples of supervised learning tasks include:
 
 ## Types of Supervised Learning Model
 
-Some of the common supervised learning algorithms you might encounter are:
+There are many supervised learning algorithms to choose between, and some of the common algorithms you might encounter are:
 
 - Linear Regression
 - Logistic Regression

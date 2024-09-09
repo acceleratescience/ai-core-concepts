@@ -78,7 +78,7 @@ A data pipeline is a series of steps in code that you apply to your data to tran
 
 Data is often the source of many problems researchers encounter when building AI models.
 
-A typical issue arises when there is a difference between the training and testing data that you're using. Perhaps training data was collected in one way, and test data in another. That means that your model may not work as well on your training set. One example could be a medical imaging model that is trained on images collected at one hospital, but tested on images from another where slight protocol differences mean that the data is subtly different between the two hospitals.
+A typical issue arises when there is a difference between the training and testing data that you're using. Perhaps training data was collected in one way, and test data in another. That means that your model may not work as well on your test set. One example could be a medical imaging model that is trained on images collected at one hospital, but tested on images from another where slight protocol differences mean that the data is subtly different between the two hospitals. Subtle differences like this can be hard to spot, but also highly impactful for your work. 
 
 A similar issue arises when data distributions change over time, and is called data _drift_. This happens all the time in real-world scenarios! Consider the language that we use. Models trained on language from 200 years ago wouldn't perform well on today's language. And even models trained 20 years ago might miss some crucial language changes.
 
