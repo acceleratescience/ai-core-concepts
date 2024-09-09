@@ -1,6 +1,8 @@
 site_name: Accelerate Science Core AI Concepts
 repo_url: https://github.com/acceleratescience/ai-core-concepts/
-site_url: https://science.ai.cam.ac.uk/ai-core-concepts/
+site_url: https://docs.science.ai.cam.ac.uk/ai-core-concepts/
+extra:
+  homepage: https://docs.science.ai.cam.ac.uk/
 nav:
   - Home: index.md
 theme:
