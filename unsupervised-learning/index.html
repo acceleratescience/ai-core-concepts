@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://science.ai.cam.ac.uk/ai-core-concepts/unsupervised-learning/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/ai-core-concepts/unsupervised-learning/">
       
       
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -269,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -425,11 +425,11 @@
 <p>It is difficult to visualise high-dimensional data well so that you can explore what it looks like. Reducing the dimensionality of your data is one way to visualise it effectively. Projecting down from tens, hundreds or thousands of dimensions to 2- or 3-dimensions means that you’re able to plot your data on a graph to view.</p>
 <p><img align="center" alt="Dimensionality Reduction" src="../imgs/dimred.png" /></p>
 <p>Principal Component Analysis (PCA), <a href="https://distill.pub/2016/misread-tsne/">t-SNE</a>, and <a href="https://pair-code.github.io/understanding-umap/">UMAP</a> are popular dimensionality reduction algorithms that you might see used for visualisation of high-dimensional data.</p>
-<p>A high number of dimensions also makes using algorithms like supervised learning and clustering difficult. Dimensionality impacts the number of parameters your AI model needs to model the data. The more parameters a model has, the larger model you must build and more data you need. This is known as the <em>curse of dimensionality</em>. When you have a small amount of data, you must be sure to keep the number of features and the number of model parameters well below the number of examples in your dataset.</p>
-<p>Dimensionality reduction algorithms are often used on high-dimensional data to reduce the number of dimensions, before then using another algorithm like clustering or supervised learning. This low-dimensional representation of a higher-dimension space is called the <em>latent space</em>. For example, in Astrophysics, PCA has been used to reduce the dimension of spectroscopy data, before doing supervised classification to determine the type of stellar object. In Biology, PCA can be used to reduce the high-dimensional gene expression data, which can be thousands of features, to a low-dimensional latent space before doing further experiments. 
-High-dimensional datasets are common across scientific disciplines, and dimensionality reduction techniques allow researchers to reduce the complexity of their data to work with it more effectively. </p>
+<p>A high number of dimensions also makes using algorithms like supervised learning and clustering difficult. High dimensionality data requires you to build models with a large number of parameters, to effectively model your data. The more parameters a model has, the more data you need. This is known as the <em>curse of dimensionality</em>. High dimensional data necessitates large datasets. </p>
+<p>Dimensionality reduction algorithms are often used on high-dimensional data to reduce the number of dimensions, before then using another algorithm like clustering or supervised learning. This low-dimensional representation of a higher-dimension space is called the <em>latent space</em>. For example, in Astrophysics, PCA has been used to reduce the dimension of spectroscopy data, before doing supervised classification to determine the type of stellar object. In Biology, PCA can be used to reduce the high-dimensional gene expression data, which can be thousands of features, to a low-dimensional latent space before doing further experiments.</p>
+<p>High-dimensional datasets are common across scientific disciplines, and dimensionality reduction techniques allow researchers to reduce the complexity of their data to work with it more effectively. </p>
 <p><strong>Anomaly Detection</strong></p>
-<p>Anomaly detection is identifying anomalous or rare examples in a dataset that are inconsistent with the rest of the dataset. Identifying rare events can be valuable in domains that generate lots of data, where you’re looking for a ‘needle in a haystack’, and doing so manually is very time-consuming. These rare events can then become the subject of future research. They can also be valuable when timely identification of an event is crucial, like ahead of a natural disaster, when automated methods can be faster than a person.</p>
+<p>Anomaly detection is identifying anomalous or rare examples in a dataset that are inconsistent with the rest of the dataset. Identifying rare events can be valuable in domains that generate lots of data, where you’re looking for a ‘needle in a haystack’, and doing so manually is very time-consuming. These rare events can then become the subject of future research. They can also be valuable when timely identification of an unusual event is crucial, like ahead of a natural disaster, when automated methods can be faster than a person.</p>
 <p><img align="center" alt="Anomoly Detection" src="../imgs/anomoly1.png" /></p>
 <p>Scientific applications of anomaly detection include:</p>
 <ul>

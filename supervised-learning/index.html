@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://science.ai.cam.ac.uk/ai-core-concepts/supervised-learning/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/ai-core-concepts/supervised-learning/">
       
       
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -269,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -460,19 +460,19 @@
 <p><strong>Classification</strong> is where the output of the model is one of a fixed number of categories. This could be a binary classification task where there are exactly two possible outputs, like the example above of spam email detection. Another example of a binary classification task is that of predicting whether a new drug candidate is toxic or not. You can think of the model as finding a line to separate the two classes, as shown here:</p>
 <p><img align="center" alt="Binary Classification" src="../imgs/sup3.png" /></p>
 <p>Usually, there's some overlap between the two classes, so it’s not possible for a model to completely separate them. In the example above, some examples of spam email fall to the left of the line and are misclassified as non-spam, while some examples of non-spam email fall to the right and are wrongly identified as spam. This example also shows the model as a straight line separating the two classes. Typically, supervised learning models find a way to separate the classes that’s more complex than a straight line.</p>
-<p>A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. In Physics, a multi-class classification task could be galaxy classification, classifying the type of galaxy in an image.</p>
+<p>A different task might have multiple categories that an input could belong to. For example, recognising the face of a person in a photo. There are many possible people who could be pictured in the photo, and each person is a possible category. In Physics, a multi-class classification task could be galaxy classification, classifying the type of galaxy in an image. In this example, the classifier learns to separate three categories:</p>
 <p><img align="center" alt="Multi-class Classification" src="../imgs/sup4.png" /></p>
+<p>Sometimes the number of classes can be very large, even into the thousands or millions, as is the case with many language processing tasks. Automatically translating text from one source language to another target language is a supervised task, where the model predictions are words in the target language. As languages have many thousands of words, then the number of output classes is also in the thousands. </p>
 <p>In other scenarios, an input might have more than one label. For example, a photo might have two or more different people in it, and we'd like to identify each. This is called <em>multi-label</em> classification, because each photo has more than one label associated with it.</p>
-<p>Sometimes the number of classes can be very large, even into the thousands or millions, as is the case with many language processing tasks. Automatically translating text from one language to another is a supervised task, where the model predictions are words in the target language. As languages have many thousands of words, then the number of output classes is also in the thousands. </p>
-<p><strong>Regression</strong> is similar to classification, except that the output is a continuous number rather than a discrete class. An example might be predicting the BMI of a patient based on blood test biomarkers. Fitting a line of best fit is a simple kind of regression.</p>
+<p><strong>Regression</strong> is similar to classification, except that the output is a continuous number rather than a discrete class. An example might be predicting the BMI of a patient based on blood test biomarkers. Fitting a line of best fit is a simple kind of regression, as in this example:</p>
 <p><img align="center" alt="Regression" src="../imgs/sup5.png" /></p>
 <h2 id="feature-extraction">Feature Extraction</h2>
-<p>Machine learning models require numerical inputs, and you'll need to consider that in designing your setup. Some tasks naturally have numerical inputs, or <em>features</em>, already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to a numerical format by extracting features.</p>
-<p>For the spam email task, we extract two features from each email, giving a 2-dimensional feature vector:</p>
+<p>Machine learning models require numerical inputs, and you'll need to consider that in designing your setup. Some tasks naturally have numerical inputs, or <em>features</em>, already - whether that's data from sensors, medical tests, pixel values or some other kind of data that's naturally a number. In other tasks, like in text processing, we need to convert our input to numbers by extracting features.</p>
+<p>For the spam email task described above, we extract two features from each email, giving a 2-dimensional feature vector:</p>
 <p><img align="center" alt="Feature Extraction" src="../imgs/sup6.png" /></p>
 <p>In a different task, in an example clinical setting, there might extract eight features about each patient, and they’re combined into an 8-dimensional feature vector:</p>
 <p><img align="center" alt="Feature Extraction" src="../imgs/sup7.png" /></p>
-<p>In other scenarios, the feature vectors might have hundreds or thousands of dimensions. </p>
+<p>In other scenarios, the feature vectors might have hundreds or thousands of dimensions. Perhaps you have a sensor measuring many readings, or lengthy gene expression data in a bioinformatics task. Still, whether you have a small number of features, or many thousands, the first task is to convert it into numbers that can be input to a machine learning model. </p>
 <h2 id="examples-of-supervised-learning">Examples of Supervised Learning</h2>
 <p>Examples of supervised learning tasks include:</p>
 <table>
@@ -517,7 +517,7 @@
 </tbody>
 </table>
 <h2 id="types-of-supervised-learning-model">Types of Supervised Learning Model</h2>
-<p>Some of the common supervised learning algorithms you might encounter are:</p>
+<p>There are many supervised learning algorithms to choose between, and some of the common algorithms you might encounter are:</p>
 <ul>
 <li>Linear Regression</li>
 <li>Logistic Regression</li>

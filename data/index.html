@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://science.ai.cam.ac.uk/ai-core-concepts/data/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/ai-core-concepts/data/">
       
       
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -269,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -471,7 +471,7 @@
 <p>A data pipeline is a series of steps in code that you apply to your data to transform it from raw data into the form that’s ready for use by your AI algorithm. </p>
 <h2 id="data-issues">Data issues</h2>
 <p>Data is often the source of many problems researchers encounter when building AI models.</p>
-<p>A typical issue arises when there is a difference between the training and testing data that you're using. Perhaps training data was collected in one way, and test data in another. That means that your model may not work as well on your training set. One example could be a medical imaging model that is trained on images collected at one hospital, but tested on images from another where slight protocol differences mean that the data is subtly different between the two hospitals.</p>
+<p>A typical issue arises when there is a difference between the training and testing data that you're using. Perhaps training data was collected in one way, and test data in another. That means that your model may not work as well on your test set. One example could be a medical imaging model that is trained on images collected at one hospital, but tested on images from another where slight protocol differences mean that the data is subtly different between the two hospitals. Subtle differences like this can be hard to spot, but also highly impactful for your work. </p>
 <p>A similar issue arises when data distributions change over time, and is called data <em>drift</em>. This happens all the time in real-world scenarios! Consider the language that we use. Models trained on language from 200 years ago wouldn't perform well on today's language. And even models trained 20 years ago might miss some crucial language changes.</p>
 <p>Skewed data is where there is an imbalance in the amount of data between classes, because one class is far more common than another. This is common in, say, astrophysics contexts where the number of transient events of interest is low compared to the number of stable objects.</p>
 <p>Finally, depending on what you're doing, your data may contain personal and sensitive information about people. Keeping it safe and secure is crucial. A data management plan is a key tool for describing how you plan to manage your data. It covers factors such as how and where you can process data, where it’s stored, and who can access with different levels of security, and whether it’s anonymised. Your <a href="https://www.data.cam.ac.uk/DMPsupport">library</a> can offer support on writing a data management plan. Sharing data beyond your group may require a <em>data transfer agreement</em> to be in place.</p>

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://science.ai.cam.ac.uk/ai-core-concepts/training/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/ai-core-concepts/training/">
       
       
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-header__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -269,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
+    <a href="https://docs.science.ai.cam.ac.uk/" title="Accelerate Science Core AI Concepts" class="md-nav__button md-logo" aria-label="Accelerate Science Core AI Concepts" data-md-component="logo">
       
   <img src="../imgs/trace.svg" alt="logo">
 
@@ -383,9 +383,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#issues-with-training_1" class="md-nav__link">
+  <a href="#training-vs-finetuning" class="md-nav__link">
     <span class="md-ellipsis">
-      Issues with training
+      Training vs Finetuning
     </span>
   </a>
   
@@ -429,7 +429,7 @@
 </ul>
 <h2 id="model-training">Model Training</h2>
 <p>Model training is at the heart of an AI project. It’s the process of feeding data examples to your model so that it can learn the patterns that are present. In supervised learning and generative AI, the model learns from data examples and their labels. In unsupervised learning, the model learns just from the data examples with no labels. In reinforcement learning, the model learns through interaction with the real world, or a simulation of it.</p>
-<p>Models themselves consist of <em>parameters</em>, and training is the process of learning the values of those parameters. A linear regression model trained on one dataset might have the same number of parameters as that trained on another, but the learned parameter values, or <em>weights</em>, are different because they've been learned from the different training datasets.</p>
+<p>Models themselves consist of <em>parameters</em>, or <em>weights</em>, and training is the process of learning the values of those parameters. A linear regression model trained on one dataset might have the same number of parameters as that trained on another, but the learned parameter values are different because they've been learned from the different training datasets.</p>
 <p>The number of parameters varies wildly between models. A small linear regression model might have in the order of 10 parameters, while a state-of-the-art generative AI model might have 10 billion or more parameters. Larger models require more time &amp; computational power to train - often needing multiple GPUs for the largest models - while small models can be trained locally in minutes on just a CPU. Complex tasks typically need larger models for acceptable performance.</p>
 <p>The training algorithm itself to learn these parameter values is also an iterative process. You feed training data into the model, then the algorithm figures out how wrong the model is for these data points and makes small adjustments to the parameters to perform a little better. The question of whether the model fits the data points is judged by a <em>loss function</em> or an <em>objective function</em> that can compute how well the model matches the data as training progresses. Over time, with lots of iterations passing over the training dataset, the parameters converge to a place where they model the training data well. Each pass over the entire training data set is known as an <em>epoch</em>.</p>
 <p>As a researcher using AI, you can often get started exploring AI without needing to know the details of the training, as there are powerful software libraries that handle the implementation.</p>
@@ -437,7 +437,7 @@
 <p>The purpose of model training is to find optimal values for the model parameters. However, there are other parameters in machine learning that aren't part of the model. These are called <em>hyperparameters</em>, and they affect the outcome of the model training. These might be, for example, the number of layers in your neural network, the number of training epochs, or the learning rate of your training algorithm.</p>
 <p>Many implementations of AI model training have good default settings for the hyperparameters. However, one purpose of a development set is to have data available for tuning the hyperparameters. There are several strategies for hyperparameter tuning. The simplest is known as <em>grid search</em>, and involves testing hyperparameter values across a range of values. So, in practice, tuning the hyperparameters means building models with several different hyperparameter values, testing the performance of those models on the development data, and choosing the model with best performance. By tuning hyperparameters on a development set, the test set can remain held out, and avoid overfitting.</p>
 <h2 id="randomness-in-training">Randomness in Training</h2>
-<p>There are many places in ML training where randomness is used. Examples include the random initialisation of weights (parameters) at the beginning of training, the hardware that you’re building on, or the random shuffling of the data that you’re using for training.</p>
+<p>There are many places in ML training where randomness is used. Examples include the random initialisation of weights (parameters) at the beginning of training, the hardware that you’re building on, or the random shuffling of the data that you’re using for training. Randomness is essential to the performance of ML models, but can also prevent reproducibility of your work. </p>
 <p>Two ways to account for randomness are:</p>
 <ul>
 <li>Use a fixed ‘random seed’ to get the same results each time your code is run, and enable reproducibility</li>
@@ -448,10 +448,11 @@
 <p>Two ways that training can be derailed are over- and under-fitting.</p>
 <p><strong>Over-fitting</strong> is where the model learns the training data too well, capturing noise and details that do not generalise to the test data. This results in poor performance on development or test data, despite excellent performance on the training data. Over-fitting can be a risk if you don’t have enough data, or your model is complex.</p>
 <p><strong>Under-fitting</strong> is the opposite, where a model is too simplistic to capture details of the training data. You might have a lot of data and a simple model, so the model isn't able to approximate the data well. In this case the model will perform poorly on both your training and test set.</p>
-<h2 id="issues-with-training_1">Issues with training</h2>
+<h2 id="training-vs-finetuning">Training vs Finetuning</h2>
 <p>You do not always need to train a model from scratch. Often, there can be a model out there which you can use as a starting point. Then, you would finetune that model to your data, or use transfer learning.</p>
 <p><strong>Finetuning</strong> is where you keep the model architecture as it is, and just train the model a bit more on your data.</p>
 <p><strong>Transfer learning</strong> is similar to finetuning, but with the understanding that you're training the model for a different task than the one it was originally trained to do. With neural networks, this typically means replacing the last layer with one which is designed for your task.</p>
+<p>The advantage of starting from an existing pretrained model is that you typically don't need as large a dataset as you would if training a model entirely from scratch. </p>
 <h2 id="contact">Contact</h2>
 <p>If you can't find what you need</p>
 <p><a class="md-button" href="mailto:accelerate-mle@cst.cam.ac.uk">CONTACT US <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></span></a></p>
