@@ -70,8 +70,25 @@ Scientific applications of anomaly detection include:
 - Climate Science - identifying rare weather events or giving early signs of natural disasters such as predicting earthquakes from seismic data, or wildfire risk from weather patterns
 - Medicine - identifying abnormalities in lab results e.g. triaging patients based on CT brain scans, or identifying malignant tumours as outliers in medical images
 
-Anomaly detection can help researchers identify significant, unusual events that can lead to important discoveries, and provide early warnings for other scenarios. 
- 
+Anomaly detection can help researchers identify significant, unusual events that can lead to important discoveries, and provide early warnings for other scenarios.
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-regular-moon:{ .lg .middle } **Case Study: Astrophysics**
+
+    **Dr Sireesha Chamarthi, Department of Astrophysics**
+    ---
+
+    In fields with vast datasets, like astronomy, anomaly detection is a critical tool for uncovering rare or unknown phenomena. For astronomers, anomalies could be anything from a supernova’s sudden brightness to an unusual galaxy shape. From finding new types of stars and galaxies, to detecting cosmic ray events and spotting exoplanets around distant stars. Telescopes capture billions of data points - petabytes of data - and manually finding anomalies isn't an option. 
+
+    A critical initial step in anomaly detection for astronomical data is to validate the data and distinguish and exclude anomalies due to instrument or calibration issues, ensuring that remaining anomalies are of true scientific interest.
+    
+    Approaches to anomaly detection have evolved from traditional statistical methods to advanced machine learning and deep learning techniques. Statistical methods like Z-score and thresholding are simple but effective ways to flag outliers based on deviations from a statistical value. Machine learning has added more flexibility, with techniques like clustering techniques, Isolation Forest and Local outlier factors, which group similar data points and highlight those that don’t fit. Deep learning approaches, like autoencoders, are particularly valuable for high-dimensional data, allowing complex patterns to emerge that might not be visible through simpler methods.
+
+    Automated systems that flag these anomalies in real-time allow astronomers to respond quickly, capturing data that might otherwise be missed. The vast scope of data in astronomy means that anomaly detection will continue to play an essential role in future discoveries. Tools specifically designed for astronomical data, such as Astronomaly, combine machine learning with active learning, where scientists provide feedback to refine detection models. This feedback loop enhances accuracy by prioritizing scientifically significant anomalies. As technology advances, these anomaly detection systems will increasingly help astronomers unlock the mysteries of the cosmos by identifying rare and impactful events across vast datasets.
+
+</div>
+
 
 
 ## Inspiration
