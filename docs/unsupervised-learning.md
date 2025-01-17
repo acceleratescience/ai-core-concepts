@@ -72,12 +72,22 @@ Scientific applications of anomaly detection include:
 
 Anomaly detection can help researchers identify significant, unusual events that can lead to important discoveries, and provide early warnings for other scenarios.
 
-<div class="grid cards" markdown>
+!!! abstract "Case Study: Clustering in Cell Biology"
+    **Dr Dinithi Sumanaweera**
 
--   :fontawesome-regular-moon:{ .lg .middle } **Case Study: Astrophysics**
+    There are about 37 trillion cells in the human body. Cells come in many different shapes and sizes, with their own specialised roles - e.g. red blood cells, neurons, or muscle cells. Each cell carries a copy of one’s DNA, which instructs the cell to produce specific proteins. These instructions are encoded in genes, and the process of decoding these instructions and making proteins is called ‘gene expression’. The gene expression data of a cell can uniquely tell us what kind of cell it is.
 
-    **Dr Sireesha Chamarthi, Department of Astrophysics**
-    ---
+     Due to the development of single-cell genomics technology, we are now able to record the gene expression of individual cells. This data forms a high-dimensional dataset. We first use dimensionality reduction techniques such as principal component analysis to create a low dimensional dataset. Then, we can identify clusters of cells that correspond to different cell types.
+
+     While it is possible to use any clustering algorithm, the most common has been to first construct a k-nearest neighbourhood graph of the cells and run a community detection algorithm such as Leiden clustering or Louvain clustering. This can identify local neighbourhoods of cells that have similar gene expression profiles. These clusters characterise different cell types. A cluster could also capture a new cell type unknown to the community which can then be the subject of further research. We can also use the above low dimensional datasets to further reduce them down to 2D or 3D datasets for visualisation. These are often done using an algorithm like UMAP or tSNE.
+
+     Scientists have been analysing gene expression data data to identify and define diverse cell types in the human body. It is known that there are over 400 different types which have been identified, with more cell types yet to be discovered. These annotated datasets are indispensable for global cell atlasing efforts such as the [Human Cell Atlas](https://www.humancellatlas.org). 
+
+
+
+
+!!! abstract "Case Study: Anomaly Detection in Astrophysics"
+    **Dr Sireesha Chamarthi**
 
     In fields with vast datasets, like astronomy, anomaly detection is a critical tool for uncovering rare or unknown phenomena. For astronomers, anomalies could be anything from a supernova’s sudden brightness to an unusual galaxy shape. From finding new types of stars and galaxies, to detecting cosmic ray events and spotting exoplanets around distant stars. Telescopes capture billions of data points - petabytes of data - and manually finding anomalies isn't an option. 
 
@@ -86,8 +96,6 @@ Anomaly detection can help researchers identify significant, unusual events that
     Approaches to anomaly detection have evolved from traditional statistical methods to advanced machine learning and deep learning techniques. Statistical methods like Z-score and thresholding are simple but effective ways to flag outliers based on deviations from a statistical value. Machine learning has added more flexibility, with techniques like clustering techniques, Isolation Forest and Local outlier factors, which group similar data points and highlight those that don’t fit. Deep learning approaches, like autoencoders, are particularly valuable for high-dimensional data, allowing complex patterns to emerge that might not be visible through simpler methods.
 
     Automated systems that flag these anomalies in real-time allow astronomers to respond quickly, capturing data that might otherwise be missed. The vast scope of data in astronomy means that anomaly detection will continue to play an essential role in future discoveries. Tools specifically designed for astronomical data, such as Astronomaly, combine machine learning with active learning, where scientists provide feedback to refine detection models. This feedback loop enhances accuracy by prioritizing scientifically significant anomalies. As technology advances, these anomaly detection systems will increasingly help astronomers unlock the mysteries of the cosmos by identifying rare and impactful events across vast datasets.
-
-</div>
 
 
 
