@@ -44,6 +44,15 @@ Examples of computer vision techniques applied to scientific research include:
 - In Materials Science, for denoising and improving the resolution of electron microscopy images, making them easier to work with.
 - In Veterinary Science, identifying the pose of animals in photographs can help with behavioural analysis.
 
+!!! abstract "Case Study: Computer Vision in Neuroscience"
+    **Samia Mohinta**
+
+    Computer vision provides a set of tools and techniques for interrogating different kinds of image data, including electron microscopy images that are relied on in neuroscience.
+
+    Electron microscopy images of fruit fly brains look nothing like natural images, like photographs, that we are used to. Many computer vision algorithms are built to work on natural images, and so aren't directly applicable to these kind of images.
+
+     So, scientists need to develop vision models that are specialised for electron microscope images. These models can do all same tasks of classification & segmentation as models for natural images. By identifying and segmenting neurons in these images, it's possible to map the structure and connection - i.e. the connectome - of these small brains. What we learn about fruit fly brains can then give us insight into our own human brains. 
+
 
 ## Contact
 
