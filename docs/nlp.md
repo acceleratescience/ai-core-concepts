@@ -48,6 +48,18 @@ There are many sources of text data available to researchers. Examples of NLP wo
 - NLP models monitor changing sentiment about events such as covid-19 from social media data
 - NLP can be used to analyse legal texts and policy documents, providing researchers with key points about those policies
 
+!!! abstract "Case Study: NLP in the Legal Domain"
+    **Dr Felix Steffek**
+
+    In fields with large amounts of text data, like law, Natural Language Processing can provide a toolbox to explore and analyse data in new ways. 
+
+    The first example of NLP in law is of identifying facts in legal documents. Large language models like GPT4 or BERT can be used to identify facts, claims, references to precedents or legal statutes, and other key information from dense legal text documents. This can make it easier and faster to analyse these texts.
+
+    A second example of NLP in law is of classifying documents, here employment tribunal judgements. In this work, the classes were the outcomes of the case - whether the claimant won, lost, or partly won the case. Language models were used to classify cases, and compared against annotations from legal experts. In baseline experiments, human experts were better at predicting cases with a clear win or loss, while the AI models did better in more complex cases where the claimant only partly wins or where the court renders another decision, such as an order to produce further evidence. 
+
+    As with all AI approaches, the data matters. Having large and comprehensive datasets in a domain like law can accelerate research. The [Cambridge Law Corpus](https://arxiv.org/abs/2309.12269) is a set of 250,000 court cases together with annotations on case outcomes for 638 cases as carried out by legal experts. 
+
+    AI will fundamentally change the way law is applied, made and researched. Our aim is to accompany this process by showing what works and what does not yet work. Legal AI benefits from a dynamic trinity: there is potential for progress, it is scientifically interesting, and it matters to people. 
 
 
 ## Resources
