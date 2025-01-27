@@ -101,18 +101,18 @@ Much of the recent excitement around AI focuses on neural network approaches. Ho
 
 ## Case Study
 
-Healthcare; Dr Christopher Bannon
+!!! abstract "Case Study: Supervised Learning in Healthcare"
+    **Dr Chris Bannon**
 
-Obesity is a risk factor for conditions like type-2 diabetes, and scientists have been using AI methods to help understand the effect of obesity on the body. In particular, understanding the effect of specific hormone levels can open up the path to better understanding of the biology of obesity.
+    As medicine advances, we're now able to collect more and more data, and look in more detail at what's going on in our body. We're able to analyse blood samples to find the presence (or absence) of small amounts of hormones, peptides or other markers - many of which we weren't able to measure in the past because the technology wasn't sensitive enough. Then, we can begin to use AI to understand how these relate to disease.
 
-This study had a group of 205 participants in obese and non-obese groups. Participants in both groups fasted overnight, and then were given a standardised meal. Levels of two hormones from the gut (PPY and GIP), and two pancreatic hormones (insulin and glucagon), were measured from blood samples using a technique called immunoassay. The hormones were measured before and after eating, giving 8 readings in total.
+    With a cohort of healthy volunteers and of patients with specific conditions, we use supervised learning algorithms to predict whether patients have that particular condition or not, based on features (markers) in their blood.
 
-A supervised learning algorithm - Linear Regression - was used to predict body mass index (BMI) from these hormone level readings. With a set of 205 participants, the number of features was chosen to be small and avoid overfitting. 4 hormone levels were selected from the 8 measured, and two different regression models were built - one for obese, and one for non-obese, participants.
+    In medicine though, it's not enough to be able to predict whether someone has a condition or not. It's important for clinicans to be able to understand _why_ a model is predicting a diagnosis. We need to know which of the various markers are most important, so we can do a better job of understanding and treating a condition. 
 
-One advantage of linear regression, as compared to more complex supervised learning algorithms, is that it's possible to look inside the model and examine the impact that each feature has on the prediction. By using linear regression to predict BMI from hormone levels, it's feasible to see the contribution of each hormone to the BMI prediction. Results showed that gut hormones PYY and GIP, and pancreatic hormones insulin and glucagon, showed strong relationships with BMI in non-obese subjects. In obese participants however, the major BMI correlations were with pancreatic hormones only.
+    As AI models get more complex, understanding how they make their decisions is increasingly harder. Hence, supervised learning algorithms like linear regression, decision trees and random forests are used in medicine. These algorithms not only let us predict a condition, but also allow us to look closer at what features, or markers, contribute to the decision. This understanding can inform future research. 
 
-
-Paper: [https://www.sciencedirect.com/science/article/pii/S0196978124000391](https://www.sciencedirect.com/science/article/pii/S0196978124000391)
+    The use of AI in medicine allows us to better understand our health, and how hormones contribute to disease, and to potentially discover new diagnostic blood tests that can be used in clinical practice. 
 
 
 ## Inspiration
