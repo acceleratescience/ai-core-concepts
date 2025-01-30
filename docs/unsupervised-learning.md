@@ -81,7 +81,7 @@ Anomaly detection can help researchers identify significant, unusual events that
 
      While it is possible to use any clustering algorithm, the most common has been to first construct a k-nearest neighbourhood graph of the cells and run a community detection algorithm such as Leiden clustering or Louvain clustering. This can identify local neighbourhoods of cells that have similar gene expression profiles. These clusters characterise different cell types. A cluster could also capture a new cell type unknown to the community which can then be the subject of further research. We can also use the above low dimensional datasets to further reduce them down to 2D or 3D datasets for visualisation. These are often done using an algorithm like UMAP or tSNE.
 
-     Scientists have been analysing gene expression data data to identify and define diverse cell types in the human body. It is known that there are over 400 different types which have been identified, with more cell types yet to be discovered. These annotated datasets are indispensable for global cell atlasing efforts such as the [Human Cell Atlas](https://www.humancellatlas.org). 
+     Scientists have been analysing gene expression data to identify and define diverse cell types in the human body. It is known that there are over 400 different types which have been identified, with more cell types yet to be discovered. These annotated datasets are indispensable for global cell atlasing efforts such as the [Human Cell Atlas](https://www.humancellatlas.org). 
 
 
 
