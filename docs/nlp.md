@@ -49,7 +49,10 @@ There are many sources of text data available to researchers. Examples of NLP wo
 - NLP can be used to analyse legal texts and policy documents, providing researchers with key points about those policies
 
 !!! abstract "Case Study: NLP in the Legal Domain"
-    **Prof Felix Steffek**
+    
+    <iframe width="1463" height="375" src="https://www.youtube.com/embed/qwZ-127XfM0" title="Natural Language Processing in the Legal Domain - Professor Felix Steffek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    ## **Prof Felix Steffek**
 
     In fields with large amounts of text data, like law, Natural Language Processing can provide a toolbox to explore and analyse data in new ways. 
 
