@@ -62,7 +62,9 @@ There are many sources of text data available to researchers. Examples of NLP wo
 
     As with all AI approaches, the data matters. Having large and comprehensive datasets in a domain like law can accelerate research. The [Cambridge Law Corpus](https://arxiv.org/abs/2309.12269) is a set of more than 320,000 court cases together with annotations on case outcomes for 638 cases as carried out by legal experts. 
 
-    AI will fundamentally change the way law is applied, made and researched. Our aim is to accompany this process by showing what works and what does not yet work. Legal AI benefits from a dynamic trinity: there is potential for progress, it is scientifically interesting, and it matters to people. 
+    AI will fundamentally change the way law is applied, made and researched. Our aim is to accompany this process by showing what works and what does not yet work. Legal AI benefits from a dynamic trinity: there is potential for progress, it is scientifically interesting, and it matters to people.
+
+    This work was done in collaboration with Helena Xie, Joana Ribeiro de Faria, Christine Carter and Jonathan Rutherford.
 
 
 ## Resources
