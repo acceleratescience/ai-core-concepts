@@ -1,8 +1,6 @@
 site_name: Accelerate Science Core AI Concepts
 repo_url: https://github.com/acceleratescience/ai-core-concepts/
 site_url: https://docs.science.ai.cam.ac.uk/ai-core-concepts/
-extra:
-  homepage: https://docs.science.ai.cam.ac.uk/
 nav:
   - Home: index.md
   - Core Concepts:
@@ -101,5 +99,39 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+extra:
+  homepage: https://docs.science.ai.cam.ac.uk/
+  consent:
+      title: Cookie consent
+      description: >- 
+        We use cookies to recognize your repeated visits and preferences, as well
+        as to measure the effectiveness of our documentation and whether users
+        find what they're searching for. With your consent, you're helping us to
+        make our documentation better.
+      actions:
+        - accept
+        - reject
+        - manage
+  analytics:
+    provider: google
+    property: G-JLGLYJ24SD
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/acceleratescience/packaging-publishing/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/acceleratescience/packaging-publishing/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+copyright: >
+  Copyright &copy; 2024 Accelerate Programme for Scientific Discovery –
+  <a href="#__consent">Change cookie settings</a>
 watch:
   - .
