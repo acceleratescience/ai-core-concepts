@@ -5,6 +5,22 @@ extra:
   homepage: https://docs.science.ai.cam.ac.uk/
 nav:
   - Home: index.md
+  - Core Concepts:
+    - What is AI?: what-is-ai.md
+    - Supervised Learning: supervised-learning.md
+    - Unsupervised Learning: unsupervised-learning.md
+    - Reinforcement Learning: reinforcement-learning.md
+    - Generative AI: generative-ai.md
+    - Limitations of AI: limitations-of-ai.md
+    - Natural Language Processing: nlp.md
+    - Computer Vision: image.md
+  - Practical Considerations:
+    - The AI Project Lifecycle: ai-project-lifecycle.md
+    - Data for AI Models: data.md
+    - Training AI Models: training.md
+    - Evaluating AI Models: evaluating.md
+    - Some Practical Advice: practical.md
+    - Next Steps: next-steps.md
 theme:
   favicon: imgs/trace.svg
   name: material
