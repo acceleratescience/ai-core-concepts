@@ -52,7 +52,7 @@ There are many sources of text data available to researchers. Examples of NLP wo
     
     <iframe width="1463" height="375" src="https://www.youtube.com/embed/qwZ-127XfM0" title="Natural Language Processing in the Legal Domain - Professor Felix Steffek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
-    ## **Prof Felix Steffek**
+    **Prof Felix Steffek**
 
     In fields with large amounts of text data, like law, Natural Language Processing can provide a toolbox to explore and analyse data in new ways. 
 

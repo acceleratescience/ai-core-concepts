@@ -102,6 +102,9 @@ Much of the recent excitement around AI focuses on neural network approaches. Ho
 ## Case Study
 
 !!! abstract "Case Study: Supervised Learning in Healthcare"
+
+    <iframe width="1463" height="375" src="https://www.youtube.com/embed/NqKdfca7JJ8?list=PLbbha-3_S4YWkM-FXjZp8f5fNdV5z5D6B" title="Supervised Learning in Healthcare - Dr Chris Bannon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     **Dr Chris Bannon**
 
     As medicine advances, we're now able to collect more and more data, and look in more detail at what's going on in our body. We're able to analyse blood samples to find the presence (or absence) of small amounts of hormones, peptides or other markers - many of which we weren't able to measure in the past because the technology wasn't sensitive enough. Then, we can begin to use AI to understand how these relate to disease.

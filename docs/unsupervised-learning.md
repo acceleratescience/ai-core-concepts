@@ -73,6 +73,9 @@ Scientific applications of anomaly detection include:
 Anomaly detection can help researchers identify significant, unusual events that can lead to important discoveries, and provide early warnings for other scenarios.
 
 !!! abstract "Case Study: Clustering in Cell Biology"
+
+    <iframe width="1413" height="375" src="https://www.youtube.com/embed/FYAP7gTQYwU?list=PLbbha-3_S4YWkM-FXjZp8f5fNdV5z5D6B" title="Unsupervised Learning Algorithms, Clustering in Cell Biology - Dr Dinithi Sumanaweera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     **Dr Dinithi Sumanaweera**
 
     There are about 37 trillion cells in the human body. Cells come in many different shapes and sizes, with their own specialised roles - e.g. red blood cells, neurons, or muscle cells. Each cell carries a copy of one’s DNA, which instructs the cell to produce specific proteins. These instructions are encoded in genes, and the process of decoding these instructions and making proteins is called ‘gene expression’. The gene expression data of a cell can uniquely tell us what kind of cell it is.
@@ -87,6 +90,9 @@ Anomaly detection can help researchers identify significant, unusual events that
 
 
 !!! abstract "Case Study: Anomaly Detection in Astrophysics"
+
+    <iframe width="1413" height="375" src="https://www.youtube.com/embed/ZT0ezrO1S2g?list=PLbbha-3_S4YWkM-FXjZp8f5fNdV5z5D6B" title="Anomaly Detection in Astrophysics - Dr Sireesha Chamarthi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     **Dr Sireesha Chamarthi**
 
     In fields with vast datasets, like astronomy, anomaly detection is a critical tool for uncovering rare or unknown phenomena. For astronomers, anomalies could be anything from a supernova’s sudden brightness to an unusual galaxy shape. From finding new types of stars and galaxies, to detecting cosmic ray events and spotting exoplanets around distant stars. Telescopes capture billions of data points - petabytes of data - and manually finding anomalies isn't an option. 
